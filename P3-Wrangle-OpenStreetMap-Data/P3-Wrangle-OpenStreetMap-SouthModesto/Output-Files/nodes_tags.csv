@@ -1,0 +1,423 @@
+id,key,value,type
+92655688,highway,motorway_junction,regular
+92655688,ref,222,regular
+92655857,highway,stop,regular
+92655883,highway,motorway_junction,regular
+92655883,ref,221,regular
+92656952,highway,motorway_junction,regular
+92656952,noref,yes,regular
+92657747,highway,motorway_junction,regular
+92657747,ref,222,regular
+92657978,highway,motorway_junction,regular
+92657978,ref,223,regular
+92658163,highway,motorway_junction,regular
+92658163,ref,220,regular
+92659441,railway,level_crossing,regular
+92663387,railway,level_crossing,regular
+92672352,railway,level_crossing,regular
+92686567,railway,level_crossing,regular
+92687725,highway,stop,regular
+92687725,stop,all,regular
+92699960,highway,turning_circle,regular
+92704729,highway,turning_circle,regular
+92716461,railway,level_crossing,regular
+92720689,railway,level_crossing,regular
+92722566,highway,turning_circle,regular
+92723111,highway,turning_circle,regular
+92724230,railway,level_crossing,regular
+92726529,highway,motorway_junction,regular
+92726529,ref,35,regular
+92734518,railway,level_crossing,regular
+92736107,railway,level_crossing,regular
+92736142,railway,level_crossing,regular
+92736224,railway,level_crossing,regular
+92736250,railway,level_crossing,regular
+92736277,railway,level_crossing,regular
+92736280,railway,level_crossing,regular
+92737991,highway,turning_circle,regular
+92747409,railway,level_crossing,regular
+150964479,ele,25,regular
+150964479,gnis:Class,Populated Place,regular
+150964479,gnis:County,Stanislaus,regular
+150964479,gnis:County_num,099,regular
+150964479,id,1656059,gnis
+150964479,gnis:ST_alpha,CA,regular
+150964479,gnis:ST_num,06,regular
+150964479,import_uuid,bb7269ee-502a-5391-8056-e3ce0e66489c,regular
+150964479,is_in,"Stanislaus,California,Calif.,CA,USA",regular
+150964479,name,Harp,regular
+150964479,place,hamlet,regular
+150976701,ele,28,regular
+150976701,gnis:Class,Populated Place,regular
+150976701,gnis:County,Stanislaus,regular
+150976701,gnis:County_num,099,regular
+150976701,id,1655882,gnis
+150976701,gnis:ST_alpha,CA,regular
+150976701,gnis:ST_num,06,regular
+150976701,name,Ceres,regular
+150976701,place,town,regular
+150976701,population,45417,regular
+150976701,wikipedia,"en:Ceres, California",regular
+358762404,ele,27,regular
+358762404,county_id,099,gnis
+358762404,created,01/19/1981,gnis
+358762404,feature_id,219800,gnis
+358762404,state_id,06,gnis
+358762404,leisure,park,regular
+358762404,name,Bret Harte Park,regular
+358762408,amenity,school,regular
+358762408,ele,26,regular
+358762408,county_id,099,gnis
+358762408,created,06/14/2000,gnis
+358762408,feature_id,219801,gnis
+358762408,state_id,06,gnis
+358762408,name,Bret Harte Elementary School,regular
+358763238,amenity,school,regular
+358763238,ele,28,regular
+358763238,county_id,099,gnis
+358763238,created,06/14/2000,gnis
+358763238,feature_id,220716,gnis
+358763238,state_id,06,gnis
+358763238,name,Caswell Elementary School,regular
+358763386,ele,32,regular
+358763386,county_id,099,gnis
+358763386,created,01/19/1981,gnis
+358763386,feature_id,220859,gnis
+358763386,state_id,06,gnis
+358763386,leisure,park,regular
+358763386,name,Ceres-Whitmore Park,regular
+358764827,amenity,school,regular
+358764827,ele,27,regular
+358764827,county_id,099,gnis
+358764827,created,06/14/2000,gnis
+358764827,feature_id,222490,gnis
+358764827,state_id,06,gnis
+358764827,name,Don Pedro Elementary School,regular
+358765737,amenity,school,regular
+358765737,ele,24,regular
+358765737,county_id,099,gnis
+358765737,created,06/14/2000,gnis
+358765737,feature_id,223354,gnis
+358765737,state_id,06,gnis
+358765737,name,Fairview Elementary School,regular
+358768406,amenity,school,regular
+358768406,ele,30,regular
+358768406,county_id,099,gnis
+358768406,created,06/14/2000,gnis
+358768406,feature_id,226265,gnis
+358768406,state_id,06,gnis
+358768406,name,Kennedy Complex for Special Education,regular
+358770942,amenity,school,regular
+358770942,ele,30,regular
+358770942,county_id,099,gnis
+358770942,created,01/19/1981,gnis
+358770942,feature_id,228893,gnis
+358770942,state_id,06,gnis
+358770942,name,Modesto Union Academy,regular
+358772414,ele,27,regular
+358772414,county_id,099,gnis
+358772414,created,01/19/1981,gnis
+358772414,feature_id,230360,gnis
+358772414,state_id,06,gnis
+358772414,leisure,park,regular
+358772414,name,Parklawn Park,regular
+358778796,city,Ceres,addr
+358778796,housenumber,2904,addr
+358778796,postcode,95307,addr
+358778796,state,CA,addr
+358778796,street,6th Street,addr
+358778796,amenity,school,regular
+358778796,ele,28,regular
+358778796,county_id,099,gnis
+358778796,created,06/14/2000,gnis
+358778796,feature_id,237678,gnis
+358778796,state_id,06,gnis
+358778796,name,Walter White Elementary School,regular
+358778832,city,Ceres,addr
+358778832,housenumber,2555,addr
+358778832,postcode,95307,addr
+358778832,state,CA,addr
+358778832,street,Lawrence Street,addr
+358778832,amenity,school,regular
+358778832,ele,28,regular
+358778832,county_id,099,gnis
+358778832,created,06/14/2000,gnis
+358778832,feature_id,237709,gnis
+358778832,state_id,06,gnis
+358778832,name,Argus High School,regular
+358778832,operator,Ceres Unified School District,regular
+358803861,amenity,hospital,regular
+358803861,ele,28,regular
+358803861,county_id,099,gnis
+358803861,created,01/19/1981,gnis
+358803861,feature_id,1655930,gnis
+358803861,state_id,06,gnis
+358803861,name,County Memorial Hospital,regular
+358810339,ele,30,regular
+358810339,county_id,099,gnis
+358810339,created,07/01/1994,gnis
+358810339,feature_id,1662831,gnis
+358810339,state_id,06,gnis
+358810339,man_made,tower,regular
+358810339,name,KBES-FM (Ceres),regular
+358810609,ele,30,regular
+358810609,county_id,099,gnis
+358810609,created,07/01/1994,gnis
+358810609,feature_id,1662973,gnis
+358810609,state_id,06,gnis
+358810609,man_made,tower,regular
+358810609,name,KADV-FM (Modesto),regular
+358835372,amenity,school,regular
+358835372,ele,28,regular
+358835372,county_id,099,gnis
+358835372,created,03/25/1999,gnis
+358835372,feature_id,1817169,gnis
+358835372,state_id,06,gnis
+358835372,name,Ceres High School,regular
+358835374,amenity,post_office,regular
+358835374,ele,30,regular
+358835374,county_id,099,gnis
+358835374,created,03/25/1999,gnis
+358835374,feature_id,1817171,gnis
+358835374,state_id,06,gnis
+358835374,name,Ceres Post Office,regular
+358835375,ele,25,regular
+358835375,county_id,099,gnis
+358835375,created,03/25/1999,gnis
+358835375,feature_id,1817173,gnis
+358835375,state_id,06,gnis
+358835375,leisure,park,regular
+358835375,name,Fairview Park,regular
+358835378,amenity,school,regular
+358835378,ele,30,regular
+358835378,county_id,099,gnis
+358835378,created,03/25/1999,gnis
+358835378,feature_id,1817175,gnis
+358835378,state_id,06,gnis
+358835378,name,Howard Training Center,regular
+368029411,power,tower,regular
+368029414,power,tower,regular
+368029416,power,tower,regular
+368029418,power,tower,regular
+368029420,power,tower,regular
+368029422,power,tower,regular
+368029424,power,tower,regular
+368029425,power,tower,regular
+368029426,power,tower,regular
+368029428,power,tower,regular
+368029430,power,tower,regular
+368029431,power,tower,regular
+368029432,power,tower,regular
+368029433,power,tower,regular
+368029434,power,tower,regular
+368029435,power,tower,regular
+368029436,power,tower,regular
+368029439,power,tower,regular
+368029440,power,tower,regular
+368029441,power,tower,regular
+368029442,power,tower,regular
+368029443,power,tower,regular
+368029444,power,tower,regular
+368029445,power,tower,regular
+368029446,power,tower,regular
+368029447,power,tower,regular
+368029448,power,tower,regular
+368029450,power,tower,regular
+368029452,power,tower,regular
+368029453,power,tower,regular
+368029455,power,tower,regular
+368029456,power,tower,regular
+368029457,power,tower,regular
+368029458,power,tower,regular
+368029460,power,tower,regular
+368029461,power,tower,regular
+368029463,power,tower,regular
+368029464,power,tower,regular
+368029466,power,tower,regular
+368029467,power,tower,regular
+368029468,power,tower,regular
+368029469,power,tower,regular
+368029470,power,tower,regular
+368029471,power,tower,regular
+368029473,power,tower,regular
+368029476,power,tower,regular
+368029477,power,tower,regular
+368029478,power,tower,regular
+368029479,power,tower,regular
+368029480,power,tower,regular
+368029481,power,tower,regular
+368029482,power,tower,regular
+368029484,power,tower,regular
+368029485,power,tower,regular
+368029487,power,tower,regular
+368029489,power,tower,regular
+368029490,power,tower,regular
+368029491,power,tower,regular
+368029493,power,tower,regular
+368029494,power,tower,regular
+368029495,power,tower,regular
+368029496,power,tower,regular
+368029497,power,tower,regular
+368029499,power,tower,regular
+368029501,power,tower,regular
+368029502,power,tower,regular
+368029503,power,tower,regular
+368029504,power,tower,regular
+368029505,power,tower,regular
+368029506,power,tower,regular
+368029507,power,tower,regular
+368029508,power,tower,regular
+368029509,power,tower,regular
+368029510,power,tower,regular
+368029512,power,tower,regular
+368029513,power,tower,regular
+368170352,state,CA,addr
+368170352,amenity,library,regular
+368170352,ele,30,regular
+368170352,county_name,Stanislaus,gnis
+368170352,feature_id,1817167,gnis
+368170352,import_uuid,57871b70-0100-4405-bb30-88b2e001a944,gnis
+368170352,reviewed,no,gnis
+368170352,name,Ceres Branch Stanislaus County Free Library,regular
+368170352,source,USGS Geonames,regular
+368171732,state,CA,addr
+368171732,amenity,townhall,regular
+368171732,ele,30,regular
+368171732,county_name,Stanislaus,gnis
+368171732,feature_id,1817168,gnis
+368171732,import_uuid,57871b70-0100-4405-bb30-88b2e001a944,gnis
+368171732,reviewed,no,gnis
+368171732,name,Ceres City Hall,regular
+368171732,source,USGS Geonames,regular
+394497566,highway,motorway_junction,regular
+394497566,ref,223,regular
+1663059855,power,tower,regular
+1706632202,amenity,fast_food,regular
+1706632202,name,Taco Bell,regular
+1706633178,amenity,fuel,regular
+1706633178,name,Chevron,regular
+1761877108,amenity,fast_food,regular
+1761877108,name,Foster's Freeze,regular
+1761877175,amenity,fuel,regular
+1761877175,name,ampm,regular
+1962196839,highway,traffic_signals,regular
+1962196839,traffic_signals,signal,regular
+2511052259,amenity,place_of_worship,regular
+2511052259,name,Bethel Tabernacle,regular
+2639832696,power,tower,regular
+2639832697,power,tower,regular
+2639832698,power,tower,regular
+2639832699,power,tower,regular
+2639832700,power,tower,regular
+2639832701,power,tower,regular
+2639832702,power,tower,regular
+2639832703,power,tower,regular
+2639832708,power,tower,regular
+2639832710,power,tower,regular
+2639832711,power,tower,regular
+2639832712,power,tower,regular
+2639832713,power,tower,regular
+2639832716,power,tower,regular
+2639832717,power,tower,regular
+2639832720,power,tower,regular
+2639832721,power,tower,regular
+2639832724,power,tower,regular
+2639832750,power,tower,regular
+2639832757,power,tower,regular
+2639832765,power,tower,regular
+2639832777,highway,turning_circle,regular
+2639832784,power,tower,regular
+2639832797,power,tower,regular
+2639832812,power,tower,regular
+2639832816,power,tower,regular
+2639832820,power,tower,regular
+2639832824,power,tower,regular
+2639832828,power,tower,regular
+2639832830,highway,turning_circle,regular
+2639832833,power,tower,regular
+2639832837,power,tower,regular
+2639832843,power,tower,regular
+2639832847,power,tower,regular
+2642482262,highway,turning_circle,regular
+2642482264,highway,stop,regular
+2642482277,highway,turning_circle,regular
+2642482283,highway,turning_circle,regular
+2642482290,highway,turning_circle,regular
+3466883107,amenity,fuel,regular
+3466883107,name,QwikStop,regular
+3466883108,name,Oak Motel,regular
+3466883108,tourism,motel,regular
+3466883109,amenity,fast_food,regular
+3466883109,name,Carl's Jr.,regular
+3466883110,amenity,fuel,regular
+3466883110,name,Mobile,regular
+3466883325,landuse,commercial,regular
+3466883325,name,Fifth Street Plaza,regular
+3466883800,amenity,fuel,regular
+3466883800,name,Valero,regular
+3466883805,name,A.V.A. Liquors,regular
+3466883805,shop,alcohol,regular
+3466883806,name,Super Mercado,regular
+3466883806,shop,supermarket,regular
+3466883809,name,Family Dollar,regular
+3466883809,shop,convenience,regular
+3466883810,name,WinCo,regular
+3466886624,city,Ceres,addr
+3466886624,housenumber,2375,addr
+3466886624,postcode,95307,addr
+3466886624,state,CA,addr
+3466886624,street,Lawrence Street,addr
+3466886624,amenity,restaurant,regular
+3466886624,cuisine,mexican,regular
+3466886624,name,Alfonso's Mexican Grill,regular
+3466886624,opening_hours,11:00 am - 9:30 pm,regular
+3466886624,phone,(209) 537-2671,regular
+3466886624,smoking,no,regular
+3466886627,amenity,fast_food,regular
+3466886627,name,Pizza Guys,regular
+3466886628,amenity,fuel,regular
+3466886628,name,Olsen Gas & Liquor,regular
+3466886629,amenity,fuel,regular
+3466886629,name,Arco,regular
+3466886630,landuse,commercial,regular
+3466886630,name,Crows Landing Flea Market,regular
+3466889270,amenity,fast_food,regular
+3466889270,name,Jack in the Box,regular
+3466889271,name,Baldwin Trucking,regular
+3466889398,amenity,bank,regular
+3466889398,name,Wells Fargo,regular
+3466889399,amenity,cafe,regular
+3466889399,name,Sam's Cafe,regular
+3466889400,amenity,cafe,regular
+3466889400,name,My Garden Cafe,regular
+3466889523,amenity,substation,regular
+3466889523,name,Crows Landing Substation,regular
+3466889524,name,Flea Market el Remetito,regular
+3563870419,highway,stop,regular
+4210901375,city,Ceres,addr
+4210901375,housenumber,2555,addr
+4210901375,postcode,95307,addr
+4210901375,state,CA,addr
+4210901375,street,Lawrence Street,addr
+4210901375,amenity,school,regular
+4210901375,name,Endeavor High School,regular
+4210901375,operator,Ceres Unified School District,regular
+4386766919,city,Modesto,addr
+4386766919,housenumber,1940,addr
+4386766919,postcode,95358,addr
+4386766919,state,CA,addr
+4386766919,street,Crows Landing Road #7,addr
+4386766919,name,Sierra Western,regular
+4386766919,owner,Amparo P Cuevas,regular
+4386766919,phone,209-575-4005,regular
+4386766919,website,http://sierrawestern.net,regular
+4697921152,highway,traffic_signals,regular
+4697921152,traffic_signals,signal,regular
+4697921156,highway,traffic_signals,regular
+4697921156,traffic_signals,signal,regular
+4697921163,highway,traffic_signals,regular
+4697921163,traffic_signals,signal,regular
+4881000309,leisure,playground,regular
+4881001395,leisure,playground,regular
+4881001396,leisure,pitch,regular
+4881001396,sport,basketball,regular
