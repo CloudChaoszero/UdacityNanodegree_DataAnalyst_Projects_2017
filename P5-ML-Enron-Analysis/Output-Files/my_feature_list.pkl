@@ -1,0 +1,14 @@
+(lp0
+S'poi'
+p1
+aS'ratio_of_received_messages_to_poi'
+p2
+aS'ceo_to_employee_bonus_ratio'
+p3
+aS'ratio_of_sent_messages_to_poi'
+p4
+aS'ceo_to_employee_salary_ratio'
+p5
+aS'exercised_stock_options'
+p6
+a.

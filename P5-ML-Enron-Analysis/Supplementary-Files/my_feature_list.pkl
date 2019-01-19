@@ -1,0 +1,8 @@
+(lp0
+S'poi'
+p1
+aS'ceo_to_employee_bonus_difference'
+p2
+aS'ceo_to_employee_salary_difference'
+p3
+a.
