@@ -1,0 +1,1036 @@
+---
+title: "2014 Prosper Loan Analysis in R"
+author: "Raul Maldonado"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+  html_notebook: default
+  pdf_document: default
+---
+
+
+**Dedication:**
+
+I dedicate this to the times I longed to become a data analyst while I worked in non-analytic financial positions. 
+
+"I wasn't hungry for money. I was hungry for success"
+-Raul M.
+
+Enjoy
+
+
+# Background
+[Prosper](https://www.prosper.com) is advertised as Americas first marketplace lending platform, with over $9 billion in funded loans.
+
+Prosper allows people to invest in each other in a way that is financially and socially rewarding. On Prosper, borrowers list loan requests
+between \$2,000 and \$35,000 and individual investors invest as little as $25 in each loan listing they select. Prosper handles the servicing of the loan on behalf of the matched borrowers and investors.
+
+We explore the 2014 Prosper data containing 113,937 loans with 81 variables on each loan, including loan amount, borrower rate (or interest rate), current loan status, borrower income, borrower employment status, borrower credit history, and the latest payment information.
+
+---
+# Import Data and Tools
+
+## Libraries
+
+We want to bring in the following libraries:
+
+1. knitr (General-purpose tool for dynamic report generation)
+
+2. dpylyr (data manipulation library)
+
+3. tidyr (data manipulation library)
+
+4. ggplot2 (visualization library)
+
+
+5. gridExtra (grid visualizations)
+
+These libraries should sufficiently allow us to manipulate and explore the dataset.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Install packages
+
+# Call Libraries
+library(ggplot2) #Visualization library
+library(knitr) #General-purpose tool for dynamic report generation
+library(dplyr) #Data manipulation tool
+library(tidyr)
+library(gridExtra)
+```
+
+
+## Import Data
+After importing the csv file "propserLoanData.csv," we observe a glimpse of  what the prosper data "df" will be below:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#Read in Prosper Loan data
+df <- read.csv("Data/prosperLoanData.csv")
+```
+
+```{r echo = FALSE} 
+head(df,2) 
+```
+Observe that we only called two rows from an 81 variable dataset.
+
+Additionally, we look at the feature types for the first 10 rows and first 3 columns
+
+```{r echo = FALSE}
+str(df[1:10,1:3])
+```
+
+
+# Prosper Loan Dataframe Characteristics
+
+The folowing are the column names, number of rows, and number of columns respectively.
+
+Column Names:
+```{r echo = FALSE, warning=FALSE} 
+names(df)
+```
+
+Number of rows:
+`r nrow(df)`
+
+Number of columns
+`r ncol(df) `
+
+
+This 113,937 by 81 loan data is gargantuate. We only outputed the first three rows, above. Ingesting this dataset, we would undergo heavy time costs to our analysis. To improve computing performance and minimize time on project, for the sake of this analysis, we create several subsets from the Prosper loan dataframe "df." 
+
+> Note: What's that "NA" entry that frequently comes up?
+
+# Data Cleaning
+
+Notice how we didn't introduce the data as "tidy"", "clean"", or even mention how we extracted the data. I.e., We didn't introduce any audited data, in which could imply our data has not been maintained or corrected to analysis standards.
+
+## Is there anything suspicious about the Data?
+
+We observe the total amount of null values in the Prosper dataframe df
+`r sum(is.na(df))`
+
+We have 1078519 total missing values in our dataset.
+
+Below is a breakdown of the total null values per column in the df dataframe:
+
+```{r echo = FALSE}
+df_na_count <-sapply(df, 
+                     function(y) sum(length(which(is.na(y))))
+                     ) 
+#determing NA count for each column
+
+df_na_count <- data.frame(df_na_count) 
+#overwrite to create dataframe of df_na_count
+
+df_na_count #display datframe df_na_count
+```
+
+##  Basic summary of Null Values
+
+The mean NA count for all columns is `r colMeans(df_na_count) `
+
+13315.05 is the estimated average amount of null values in some column. What percentage of our df dataframe is this?
+
+Dividing the number of rows of the dataframe by the mean of the columns, we observe 
+`r colMeans(df_na_count) / nrow(df) `
+entries missing.
+
+### How should we resolve this null value issue?
+
+We have two choices:
+
+1. Should we delete customer data(rows) where some total null values of a given column are significantly high, such as +1000 points?
+
+2. Fill in the missing non-null value entries for each column?
+
+### Null data decision
+Say you purchase a meal for $14.99. You eat a majority of it, but then become full. Do you eat the food, or leave it be?
+
+This is subjective, though I feel I would eat the food because I am lower income individual that worked hard for every single dollar--and I certainly don't want food to go to waste(that is, I don't want my money to go to waste)
+
+Simlarly, this estimated 11% loss of data appears to be insignificant, but preservation of such details is important in our analysis. Obtaining the data is a great ordeal, and we should preserve the, once was diffcult, capute of information. 
+
+So, for the sake of minimizing data loss, we fill in the null values of the dataframe.
+
+## Filling in the missing data?
+We will use the fill function from tidyr to conveniently fill in missing data with the last recored non-null value in each category.
+
+> Example: if row 81 column 8 had an entered value 3.14159, and had several consecutive null values after, the fill function will fill in the null values with 3.14159.
+> (Note: This filling in of data induces bias. However, we preserve data. A detailed discussion will be made at the ending of this report)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+list_of_names <- c() #Empty array
+for (i in 1:length(df))
+  list_of_names[i] <- names(df)[i] 
+  #variable name appended to list list_of_Names
+df <- fill(df, list_of_names) 
+  #Fill in the variables from dataframe df
+```
+After filling in the data, we again observe the total amount and per-category null values in the Prosper dataframe df was `r sum(is.na(df))`. 
+
+```{r echo = FALSE}
+df_na_count <-sapply(df, 
+                     function(y) sum(length(which(is.na(y))))
+                     )  
+            #determing NA count for each column
+
+df_na_count <- data.frame(df_na_count) 
+            #overwrite to create dataframe of df_na_count
+
+df_na_count 
+            #display datframe df_na_count
+```
+
+We have a total of 16 missing values. It's interesting that there is still some residue of null values. However, we will not pursue this interesting route, for the sake of simplicity in this project.
+
+> Note: If one were to go more in depth, one would observe these remaining outlier variables, reiterate, and then repeat process.
+
+Recalling the two solutions for dealing with missing data, we decide to simply delete these remaining 16 values. Though these 16 persons with some missing value can have an influence in our analysis without them, we assume their impact to the analysis to be unlikely.
+
+Below is the fraction at which they represent our dataset
+`r 16/ nrow(df) `
+
+This removal is a small, small, risk we are taking.
+
+After removing the residual nulls,
+```{r echo = FALSE}
+### Removal of residual null values
+df_final = na.omit(df)
+```
+We have `r sum(is.na(df_final)) ` Null values remaining
+
+After removing the 16 customer information, rows, we proceed to subsetting our data.
+
+# Subset Dataframes
+
+We generate two subset data from our Prosper loan dataset.
+
+These two subsets are based on the idea of perspectives of a Prosper loan. 
+
+1. How does one Prosper customer interact/feel towards the loan structure?
+
+2. How does one Prosper investor interact/feel towards the loan structure?
+
+## Prosper Customer Subset
+
+
+The Prosper customer subset "loan_customer_perspective" will contain the following variables:
+
+1. The Credit Grade
+
+2. Loan Status
+
+3. Borrower Rate
+
+4. Estimated Loss
+
+5. Prosper Rating
+
+6. Available Bank Card-Credit
+
+```{r echo = FALSE}
+set.seed(20022012) #Set randomizer
+indexes_first_sample <- sample(1:nrow(df), 
+                               40000) 
+                          #random sample of all row indexes up to 40000
+loan_customer_perspective <- df[indexes_first_sample, 
+                                c(4,6,9,12,16,36)] 
+#create a subset dataset with the random row indexes we want, with column 4,6,...36.
+```
+Below is the first few rows of the customer perspective dataset.
+```{r echo = FALSE}
+head(loan_customer_perspective) 
+                # Print first five rows of dataset
+```
+
+Furthemore, the following is table statistics for this dataset:
+
+```{r echo = FALSE}
+summary(loan_customer_perspective)
+```
+
+We observe  a frequency table for Credit  Grade and Loan Status, and numerical calculations for the remainder. I.e., we see counts for the frist two features, but see mean, range, etc in the other variables.
+
+Recall factor sets. The first features are factor variables, while the remainder are numerical.
+
+In regards to the statistical information, the minimum, 1st quantile, median, and 3rd quantile are 0. However, mean is non-zero value. We interpret this as the Current Delinquencies feature have several zeros.
+
+Morover, we observe "other" classification for Credit Grade and Loan Status features. We explore these observations through visual analysis in the "Prosper Customer Analysis" section.
+
+## Prosper Investor Subset
+
+The Prosper investor subset "loan_investor_perspective" will contain the following variables:
+
+1. Employment Status
+
+2. Bank Card Utilization
+
+3. Investors
+
+4. LP_Collection Fees
+
+5. Prosper Score
+
+6. IsBorrowerHomeowner
+
+7. CurrentDelinquencies
+
+```{r echo = FALSE}
+set.seed(20022011) #set randomizer
+indexes_second_sample <- sample(1:nrow(df),
+                                20000) 
+                          #random sample of all row indexes up to 20000
+loan_investor_perspective <- df[indexes_second_sample,
+                                c(16,20,22,42,81,73,36)] 
+#get random index rows and obtain columns 16,20,22,...36.
+```
+Below is the first few rows of the loan_customer_perspective dataset
+```{r echo = FALSE}
+head(loan_investor_perspective) #Get first five rows of dataset
+```
+
+```{r echo = FALSE}
+summary(loan_investor_perspective)
+```
+
+We observe  a frequency table for the "Employment Status" and "Borrower Homeowner?" features, and numerical calculations for the remainder. I.e., we see counts for the first two features, but see mean, range, etc in the other variables.
+
+Recall factor sets. The first features are factor variables, while the remainder are numerical.
+
+In regards to the statistical information, the minimum, 1st quantile, median, and 3rd quantile are 0. However, mean is non-zero value. We interpret this as the Current Delinquencies feature have several zeros.
+
+# Analysis
+
+## Prosper Customer Analysis
+
+** Motviation **
+
+If we were a potential Prosper customer/borrower, what considerations should we factor in to be successful in paying off loan. I.e., If we were a borrower, what characteristics should I emulate to be well-off with Prosper (even considering I may want to borrow with them again, in the future)
+
+
+Again, we are utilizing the loan_customer_perspective dataset. The following are the dataset variables available to us:
+
+1. Credit Grade (Factor Variable)
+
+2. Borrower Rate (Factor Variable)
+
+3. Prosper Score (Num variable)
+
+4. Loan Status (Num variable)
+
+5. Estimated Loss (Num variable)
+
+6. Current Delinquences (int variable)
+
+The size of our data set is 40000 rows x 6 columns.
+```{r echo = FALSE}
+names(loan_customer_perspective) #obtain variable names of subset data
+```
+
+
+### Histograms
+
+#### Loan Status
+```{r echo = FALSE}
+#Create histogram with qplot function, add theme, and then label and title it, respectively
+qplot(loan_customer_perspective$LoanStatus, color ="red" ) +
+  theme(axis.text.x=element_text(angle=90), legend.position = "none") +
+  xlab(label = "Status") +
+  ggtitle(label = "Loan Status Histogram")
+```
+
+This is the count of the status of each Prosper customer loan. Of course, we observe higher completetions, current, and charge offs than deliquent cases--that's good!
+
+
+#### Credit Grade
+```{r echo = FALSE}
+#Create histograme with qplot function, add theme, and then label and title it, respectively
+qplot(loan_customer_perspective$CreditGrade, color = 'red') +
+  theme(axis.text.x=element_text(angle=90), legend.position = "none") +
+  xlab(label = "Credit Grade") +
+  ggtitle(label = "Credit Grade Histogram")
+```
+
+We observe a large amount of empty values with the Credit Grade information. This is alarming. We consider a few cases. Was there data loss in moving this information? Did Prosper take higher initiative to focus on this information in 2014? Did we mess up during the data cleaning process?
+
+### Estimated Loss
+```{r, echo = FALSE, message = FALSE, warning= FALSE}
+#Create histogram with qplot function, add theme, and then label and title it, respectively
+qplot(loan_customer_perspective$EstimatedLoss,
+      bins = 50, color = "firebrick4") +
+  theme(axis.text.x=element_text(angle=90),
+        legend.position = "none") +
+  xlim(0,.2) +
+  xlab(label = "Estimated Loss") +
+  ggtitle(label = "Estimated Loss Histogram")
+```
+
+We observe our estimated loss of the original principle from chargeoffs ranges in the 10% region. From the following summary, we observe that the average estimate loss was actually 8.032%
+
+```{r echo = FALSE}
+summary(loan_customer_perspective$EstimatedLoss)
+```
+
+
+The maximum value at which some estimated loss occured was at 36.6%. This is alarming. However, we should observe if this is a typical ceiling scenario in loss from delinquency. As a customer, we don't want to default with a high loan. (As an investor, we do not want to see such loss!)
+
+```{r echo = FALSE, warning = FALSE}
+lstatus_grid1 <- qplot(loan_customer_perspective$EstimatedLoss,
+      bins = 50, color = "firebrick4") +
+  theme(axis.text.x=element_text(angle=90),
+        legend.position = "none") +
+  xlim(0,.2) +
+  xlab(label = "Estimated Loss") +
+  ggtitle(label = "Estimated Loss Histogram")
+
+lstatus_grid2 <- ggplot(aes(x = 1, y = EstimatedLoss),
+                        data = loan_customer_perspective) +
+  geom_boxplot() +
+  xlab(label = "")
+
+
+grid.arrange(lstatus_grid1, lstatus_grid2, nrow = 1) 
+
+
+```
+
+We observe that the significant 36.6% loss was, in fact, part of a cluster of outliers, as seen by the dots of the above right diagram. These outliers are abnormal cases. 
+
+It's good to note that at most 20%, the end of the vertical line on the right graph, of investment is lost. For a customers taking out a loan after July 2009, there likelyhood of defaulting is in 10-20 percent range. 
+
+However, this is no excuse from the investor perspective.
+
+### Current Delinquencies Histogram
+```{r echo = FALSE, message = FALSE, warning=FALSE}
+#Create histogram with qplot function, add 
+#theme, and then label and title it, respectively
+qplot(loan_customer_perspective$CurrentDelinquencies,
+      color = "#663399") +
+  theme(axis.text.x=element_text(angle=90),
+        legend.position = "none") +
+  xlim(-1,10) +
+  xlab(label = "Current Delinquencies") +
+  ggtitle(label = "Current Delinquencies Histogram")
+```
+
+Simular to our Estimated loss and Loan Status, we observe a lack in delinquent customers in our sample of the Prosper customer information. This conclusion can be seen from the large amount of 0 valued current delinquencies.
+
+### Scatterplots
+
+We now consider bi-variate cases. We display visualizations for these cases using scatterplots.
+
+#### Loan Status vs Borrower Rate
+```{r echo = FALSE,  warning = FALSE,message = FALSE}
+#Create scatterplot with ggplot function, add theme, 
+#and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_customer_perspective, 
+       aes(x = factor(LoanStatus), y = BorrowerRate)) +
+  ylim(0,.36) +
+  xlab(label = "Loan Status") +
+  ylab(label = "Borrower Rate (Ratio)") +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_jitter(alpha = 1/8) + 
+  ggtitle(label = "Loan Status vs Borrower Rate Scatterplot") +
+  geom_boxplot(alpha = .3, color = 'blue') +
+  stat_summary(fun.y = "mean", 
+               geom = "point", color = "red",
+               shape =8, size = 4) 
+```
+
+From the red stars, We observe most of the customer loan data centralized at the Borrower Rate of 0.25, 25% in most cases. 
+
+Though, we can just utilize the below statistical information to resolve this question.
+```{r echo = FALSE, warning=FALSE}
+summary(loan_customer_perspective$BorrowerRate)
+```
+
+So in fact, the average Borrower Rate for Prosper Loans is `r mean(loan_customer_perspective$BorrowerRate)`
+
+A little off, but close. This unexpected average could be weighed down by lower values. But what happens if we find the median borrower rate? 
+
+The median borrower rate `r median(loan_customer_perspective$BorrowerRate)`We will reference this value as our central focal point of Borrower rate values.
+
+
+Another observation is the concentration of dark colored data points in the non-past due and non-default cases. Again, this is because our data capture had no significant past due or default cases. 
+
+> Note: There is a big concentration of chargeoff loans. One may ask why there is a major severity in this category. I would say that this is a recorded tally throughout Prosper's existense, and thus is why we see a large amount of charge offs, yet see a lack of Prosper customers being past due/defaulted.
+
+
+#### Loan Status vs Estimated Loss
+```{r echo = FALSE, message = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_customer_perspective, 
+       aes(x = LoanStatus, y = EstimatedLoss)) +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_jitter(alpha = 1/8) + 
+  ggtitle(label = "Loan Status vs Estimated Loss Scatterplot") +
+  geom_boxplot(alpha = .3, color = 'blue') +
+  stat_summary(fun.y = "mean", 
+               geom = "point", 
+               color = "red",
+               shape =8, 
+               size = 4) 
+```
+
+Again, There is a large concentration of dark colored data points in the non-past due and non-default cases. Again, this is because our data capture had no significant past due or default cases. 
+
+> Note: There is a big concentration of chargeoff loans. One may ask why there is a major severity in this category. I would say that this is a recorded tally throughout Prosper's existense, and thus is why we see a large amount of charge offs, yet see a lack of Prosper customers being past due/defaulted.
+
+> Second Note: Notice there is a darker concentration for the outliers in Charged Off and Complete categories, compared to the Borrow Rate vs Loan Status information. I am not leading in to draw connections to the two scenarios. However, I am addressing that this situation has something interesting. When an estimated loss outlier occurs, it ranges into the 30% Estimated Loss region.
+
+#### Loan Status vs Prosper Score
+```{r echo = FALSE, message = FALSE}
+loan_customer_perspective.heatmap <- loan_customer_perspective %>% 
+  group_by(LoanStatus, ProsperScore) %>% 
+  summarise(count.log=log(n()))
+
+ggplot(data = loan_customer_perspective.heatmap, 
+       aes(x = LoanStatus, y = ProsperScore)) +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_tile(aes(fill = count.log)) + 
+  ggtitle(label = "Loan Status vs Prosper Score Scatterplot")
+```
+
+One would anticipate Prosper Scores would be higher if a loan status was in good standing (current, completed, etc.) However, we observe a dark concentration in Charged off, completed, and current categories in the entire Prosper Score range, and not just the top 10% of scores. 
+
+Moreover, we observe that charge off has quite a few Prosper Scores of 7 and up. This reason could, again, lie in the fact that this category is an overall collection of Charge Off information, containing false positives.
+
+#### Borrower Rate vs Estimated Loss 
+
+```{r echo = FALSE, message = FALSE}
+ggplot(data = loan_customer_perspective, 
+       aes(x = BorrowerRate, y = EstimatedLoss)) +
+  xlab(label="Borrower Rate (Ratio)") +
+  ylab(label = "Estimated Loss (Ratio)") +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_point(alpha = 1/8, color = "purple") + 
+  ggtitle(label = "Borrower Rate vs Estimated Loss Scatterplot")
+```
+
+Notice as the borrower rate increase, the estimated loss percentage increases as well. One may believe that there is some association between borrower rate and estimated loss.
+
+We utilize the following regression model to determine if there exists some significant connection between borrower rate and estimated loss.
+$ EstimatedLoss = 0.4389099{(BorrowerRate)} + -0.0045159$
+```{r}
+loan_customer_perspective.md1 <- lm(EstimatedLoss ~ BorrowerRate,
+                                    data = loan_customer_perspective)
+summary(loan_customer_perspective.md1)
+```
+From the summary information from above, we determine that this model is significant under the assumption there is a 0.001% chance of the model being random.
+
+
+> Note: Let's assume some connection between two variables is due to chance, say 5%. If our variables were statistically significant, two stars would appear to the far right of the table of variables above. However, we see three stars. 
+>If we look at the Signif. codes, we see that three stars is associated with 0.001. Hence, we utilize 0.001 as our $\alpha$ value in this situation.
+
+> Additional Note: However, we should still be skeptical of our model. Though there is a high Adjusted R^2 value of .4926 and significance between the two variables, we need to ensure no bias, error, or even lurking variables affect this model.
+
+#### Current Delinquencies vs Prosper Score
+
+
+```{r echo = FALSE, message = FALSE}
+ggplot(data = loan_customer_perspective,
+       aes(x = CurrentDelinquencies,
+           y = ProsperScore)) +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_jitter(alpha = 1/8) + 
+  xlab("Current Delinquencies") +
+  ylab("Prosper Score") +
+  ggtitle(label = "Current Delinquencies vs Prosper Score Scatterplot")
+```
+
+Between Current Delinquencies and Prosper Score, we do not see a connection. And this should be true. Delinquencies happen by chance, and not by some explicit finding/observation in our data.
+> Note: However, there may be a case where some connection between Current Delinquencies can be predicted, from associating it with the remaining 70+ variables in the original Prosper Loan dataset.
+
+#### Current Delinquencies vs Prosper Score by Loan Status
+
+However, let's determine some association by factoring in the Loan Status feature. Below is a similar graph from the previous visualization. But, the only differnce is factoring in the Prosper customer loan status.
+```{r echo = FALSE, message = FALSE}
+ggplot(data = loan_customer_perspective, aes(x = CurrentDelinquencies, y = ProsperScore)) +
+  
+  facet_wrap(~LoanStatus) +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_jitter(alpha = 1/8) + 
+  xlab("Current Delinquencies") +
+  ylab("Prosper Score") +
+  ggtitle(label = "Current Delinquencies vs Prosper Score  by Loan Status Scatterplot")
+```
+
+There appears to be no significant findings from considering in another variable. I.e., The above visualization is just a similar understanding to that of the original example.
+
+It's good to know that we tried, right?
+
+#### Estimated Loss vs Borrower Rate Colored by Prosper Score
+
+Now we switch things up. We consider the estimated loss vs borrower rate visualization from before. The following is a reminder of the scatterplot:
+
+```{r echo = FALSE, message = FALSE}
+ggplot(data = loan_customer_perspective, aes(x = EstimatedLoss, y = BorrowerRate)) +
+  xlab(label = "Estimated Loss (Ratio)") +
+  ylab(label = "Borrower Rate (Ratio)") +
+  theme(axis.text.x=element_text(angle=90)) +
+  geom_point(alpha = 1/8, color = "purple") + 
+  ggtitle(label = "Estimated Loss vs Borrower Rate Scatterplot")
+```
+
+This time, we factor in Prosper Score in our visualization, like so:
+
+```{r echo = FALSE, message = FALSE, warning=FALSE}
+ggplot(data = loan_customer_perspective, aes(x = EstimatedLoss, 
+                                             y = BorrowerRate, 
+                                             color = as.factor(ProsperScore) )) +
+  theme(axis.text.x=element_text(angle=90)) +
+  scale_color_brewer(palette = "RdYlGn") +
+  ylim(0.05,.36) +
+  xlab("Estimated Loss (Ratio)") +
+  ylab("Borrower Rate (Ratio)") +
+  geom_point(alpha = .8) +
+  geom_smooth(method = 'lm', se = FALSE, size = 1)+
+  ggtitle(label = "Estimated Loss vs Borrower Rate Colored by Prosper Score Scatterplot")
+```
+
+Again, notice as the borrower rate increase, the estimated loss percentage increases as well. This time, as we increase our estimated loss, meanwhile observe borrower rate increasing too, we see that Prosper scores tend to decrease as the degree of estimated loss occurs.
+
+This is trivial. In hindsight, we categorize people that negatively effect us to be "bad" people; it's human nature.
+
+To this opinion, we extend the previous linear regression from before by factoring in Prosper Score.
+
+$ EstimatedLoss = 0.3076{(BorrowerRate)} -0.008560(ProsperScore) + 0.07183$
+```{r}
+loan_customer_perspective.md2 <- lm(EstimatedLoss ~ BorrowerRate + ProsperScore,  data = loan_customer_perspective)
+summary(loan_customer_perspective.md2)
+```
+
+From the summary information from above, we determine that this model is significant under the assumption there is a 0.001% chance of the model being random. 
+
+> Note: Let's assume some connection between two variables is due to chance, say 5%. If our variables were statistically significant, two stars would appear to the far right of the table of variables above. However, we see three stars. 
+>If we look at the Signif. codes, we see that three stars is associated with 0.001. Hence, we utilize 0.001 as our $\alpha$ value in this situation.
+
+
+## Prosper Investor Analysis
+
+** Motviation **
+Now, we look into the Prosper Investor perspective. Usually Investors invest in some type of portfolio of Prosper customer loans to seek investment return. 
+
+With modern day data-driven companies like Prosper, we suspect that the investor acknowledges some default rate in there investment, Prosper service fees taken out, and some return is made as well. 
+
+However, what information can we extract from the Prosper data "df" such that an investor knows what financial factors to consider in his/her investment.
+
+> Note: The above conclusion can be made from such financial institutions like [Lending Club](https://www.lendingclub.com/investing/alternative-assets/why-lending-club)
+
+
+Again, the Prosper investor subset "loan_investor_perspective" will contain the following variables:
+
+1. Employment Status
+
+2. Bank Card Utilization
+
+3. Investors
+
+4. LP_Collection Fees
+
+5. Prosper Score
+
+6. IsBorrowerHomeowner
+
+7. CurrentDelinquencies
+
+```{r}
+names(loan_investor_perspective)
+```
+
+### Histograms
+
+#### Investors
+```{r echo = FALSE, , warning = FALSE, message = FALSE}
+qplot(loan_investor_perspective$Investors, 
+      bins = 80, color = "003333") +
+  xlim(-10,500) + 
+  theme(legend.position = "none") +
+  xlab(label = "Investors") +
+  ggtitle("Investor Histogram")
+```
+
+
+Most of the investor contributions to a Prosper loan lie near 100. The case for this is empy values "" being entered into our data. If we were to observe this in full, we might anticipate a more normalized histogram.
+
+Taking this to a different scale, specifically the log scale, we observe the following:
+
+```{r echo = FALSE, , warning = FALSE, message = FALSE}
+qplot(loan_investor_perspective$Investors, 
+      bins = 80, color = "Specteral") +
+  xlim(-10,500) + 
+  theme(legend.position = "none") +
+  scale_x_log10()+
+  xlab(label = "Investors") +
+  ggtitle("Investor (log10) Histogram")
+```
+
+
+We confirm the huge 0 value spiked of investors from above. Disregarding this observation, we also observe that there is a normal count of investors near the middle region of the range 10-1000, as seen below
+
+```{r echo = FALSE, , warning = FALSE, message = FALSE}
+ggplot(data = loan_investor_perspective,
+       aes(x=Investors),
+      bins = 80, color ="red") +
+  geom_histogram() +
+  theme(legend.position = "none") +
+  scale_x_log10() +
+  xlab(label = "Investors") +
+  ggtitle("Investor (log10) Histogram")
+```
+
+#### Is Borrower a Homeowner?
+
+Typically homeowners have some pre-existing loan with a financial institution. Is there a case for Prosper customers where investors would favor non-homeowners or homeowner?
+
+```{r echo = FALSE, message=FALSE}
+qplot(loan_investor_perspective$IsBorrowerHomeowner, color = "red") +
+  xlab(label = "Is Borrower a Homeowner?") +
+  theme(legend.position = "none") +
+  ggtitle("Borrower Homeowner? Histogram")
+```
+
+We observe there is no bias towards being or not being a homeowner, when attempting to borrow from Prosper. As a customer, this is good.
+
+Moreover, we observe that Prosper investors are investing into more randomized packages.
+
+> Note: Of course, due to discrimination regulations in financial insitutions, we should suspect that there exists no bias in this case. Maybe if the regulations were not imposed, would be see the opposite sceneario?
+
+#### Bank Card Utilization
+```{r echo = FALSE, warning = FALSE,message = FALSE}
+qplot(loan_investor_perspective$BankcardUtilization,
+      bins = 150, color ="red") +
+  xlim(-.05,1.1) +
+  xlab(label = "Bank Card Utilization (Ratio)") +
+  theme(legend.position = "none") +
+  ggtitle("Bank Card Utilization Histogram")
+```
+
+We observe a large amount of non-bank card utlizations records. That is alarming. However, maybe a borrower does not have a bank card, and they are simply borrowing with the intent of not opening a card or even not being permitted to hold a card.
+
+If Prosper has a mission to get into the riskier market of underprivileged person under financial constraints, we can conlude why there exits a large amount of non-bank card users.
+
+Another observation is just the ever so climbing bank card utilization as we look along the x-axis.
+
+Lastly, noticed the spikes in our observation. We first thought some cyclic pattern occurred from some unkown variable or just assume "seasonality." However, let's consider another thought. 
+
+It could be the case that reports from some financial institutions realease customer information in a more friendly manner. I.e., maybe the input of customer bank card utilization is more on a list of options compared to typing in the full bank card utilization rate.
+
+### Scatterplots
+
+#### Investors vs Prosper Score
+```{r echo = FALSE, message = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_point
+ggplot(data = loan_investor_perspective,
+       aes(x = Investors, y = ProsperScore)) +
+  ylab(label = "Prosper Score") +
+  geom_jitter(alpha = 1/8, color = "#99CC00") +
+  ggtitle(label = "Investor vs Prosper Score Scatterplot")
+```
+
+Again, we observe a normal distribution among Prosper investors and what they invest in. I.e., we are noticing that investors are no selecting loans that guarantee success.
+
+Let's look at another Investor observation.
+
+#### Investors vs Is Borrower a Homeowner
+If I was an investor, am I able decipher and choose loans based on if a borrower is a homeowner?
+
+
+```{r echo = FALSE, message = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_point
+ggplot(data = loan_investor_perspective,
+       aes(x = Investors, y = IsBorrowerHomeowner)) +
+  geom_jitter(alpha = 1/8, color ="#660033") +
+  ylab(label = "Is Borrower a Homeowner?") +
+  ggtitle(label = "Investor vs Is Borrower a Homeowner Scatterplot")
+```
+
+Again, we observe an investor does not choose borrower loans. There is no significant finding that an investor decisively invests into borrowers based on being a homeowner.
+
+
+#### Investors vs Current Delinquencies
+
+What is the case if an investor wants to avoid borrowers with delinquencies?
+
+```{r echo = FALSE, message = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_point
+ggplot(data = loan_investor_perspective, aes(x = Investors, y = CurrentDelinquencies)) +
+  geom_point(alpha = 1/8, color = "purple") +
+  ggtitle(label = "Investor vs Current Delinquencies Scatterplot")
+```
+
+We observe that most investors end up investing into Prosper loans with some type of delinquency. We re-scale the visualization before concluding that investors, based on the graph, prefer Prosper loans with current delinquencies.
+
+#### Investors (log10) vs Current Delinquencies
+
+```{r echo = FALSE, message = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_investor_perspective, aes(x = log(Investors),
+                                             y = CurrentDelinquencies)) +
+  xlab(label = "Investors (log10)") +
+  ylab(label = "Current Delinquencies") +
+  geom_jitter(alpha = 1/8, color = "#CC33CC") +
+  ggtitle(label = "Investor (log10) vs Current Delinquencies Scatterplot")
+```
+
+We observe that most investor contributions do not have a significant outcome of low delinquency situations. Of course, there is a more likely possibility investing into Prosper loans, and having no delinquent borrowers in return.
+
+#### Investors vs Bank Card Utilization
+
+We are interested in seeing if investors would be more inclined to investing into loans where a borrower has bank card usage.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_investor_perspective, aes(x = Investors, y = BankcardUtilization)) +
+  ylim(0,2) +
+  geom_jitter(alpha = 1/8, color ="darkblue") +
+  ggtitle(label = "Investor vs Bank Card Utilization Scatterplot")
+```
+
+We observe some rectangular cluster in between 0 and 1. Thereafter, there just seem to be several outliers. This 0-1 range is the percentage of usage for borrowers. Because there is no visual pattern being displayed, we observe that, again, investors are not strategically investing.
+
+# Summary
+
+We observe from the overall perspective that there is
+
+no concrete leaning to avoid bad Prosper loans. As a Prosper borrower, we see from the following image that there exists investors investing in delinquent loans. As an investor, they can now observe they are undergoing risk in investing into loans.
+
+```{r echo = FALSE, message = FALSE, warning=FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_customer_perspective, aes(x = LoanStatus, y = BorrowerRate)) +
+  theme(axis.text.x=element_text(angle=90)) +
+  ylim(0,.4) + 
+  xlab(label="Loan Status") +
+  ylab(label= "Borrower Rat (Ratio)") +
+  geom_jitter(alpha = 1/8) + 
+  ggtitle(label = "Loan Status vs Borrower Rate Scatterplot")
+```
+
+Even in the case of Prosper Score and being a homeowner, we observe no investor bias towards some spectrum, as seen below
+
+```{r echo = FALSE, message = FALSE, warning=FALSE}
+#Create scatterplot with ggplot function, add theme, and then label and title it, respectively. Moreover, we filter points by shades in geom_jitter
+ggplot(data = loan_investor_perspective, aes(x = Investors, y = IsBorrowerHomeowner)) +
+  xlim(0,750) +
+  ylab(label = "Is borrower a Homeowner?") +
+  geom_jitter(alpha = 1/8, color = "#6699CC") +
+  ggtitle(label = "Investor vs Is Borrower a Homeowner Scatterplot")
+```
+
+
+Out of curiosity, is there at least some abnormal pattern within Prosper lending operations?
+
+The below graph is an indication that there exists no abnormal pattern. Moreover, we see that there is a pattern between estimated loss and borrower rate. Of course, that would be suspected in Prosper operations. We would like to track the bad accounts/borrowers. However, Prosper does not suspiciously categorize individuals from other discriminative occures.
+
+```{r echo = FALSE, message = FALSE, warning=FALSE}
+ggplot(data = loan_customer_perspective, aes(x = EstimatedLoss, 
+                                             y = BorrowerRate, 
+                                             color = as.factor(ProsperScore) )) +
+  xlab(label = "Estimated Loss (Ratio)") +
+  ylab(label = "Borrower Rate (Ratio") +
+  theme(axis.text.x=element_text(angle=90)) +
+  scale_color_brewer(palette = "RdYlGn") +
+  ylim(0.05,.36) +
+  geom_point(alpha = .8) +
+  geom_smooth(method = 'lm', se = FALSE, size = 1)+
+  ggtitle(label = "Estimated Loss vs Borrower Rate Colored by Prosper Score Scatterplot")
+```
+
+
+Meanwhile observe borrower rate increasing too, we see that Prosper scores tend to decrease as the degree of estimated loss occurs.
+
+This is trivial. In hindsight, we categorize people that negatively effect us to be "bad" people; it's human nature. We categorize persons on some scale of their consequential patterns against the Prosper lending operations.
+
+# Conclusion
+
+We conclude that there is no abnormal pattern between Prosper borrowers and Prosper operations. If I was a potential Prosper customer, I would like to take out a loan given the fact of the lack of bias in what type of customers they want.
+
+As an investor, we saw that they invest randomly. That is, the investor does not choose what type of loans they invest in. And that is normal.
+
+If you saw the **Lending Club** video earlier, you would see that investors agree to invest to some package of borrower. This package has calculated risk of 10%. Of course, a financial institution abides to that with specialized insights through data.
+
+So, we observe an investor chooses to invest, but not which borrower loans to invest in.
+
+The Prosper operations work according to banking regulations. Moreover, we observe classification and statistical findings about how to be a good Prosper customer and how the Prosper operations benefit prospective investors.
+
+# Reflections
+
+During this process, I encountered quite a few thoughts in regards how I can improve either the documentation or analysis.
+
+First, the difficulties I initially ran into the analysis was computing power, a gargantuate amount of variables, and just logistics of resolving empty entries. Though I ran into these issues, I feel I succeeded in resolving NA values, partitioning the data for sake of computing power, and just performing more than just a data visualization analysis. 
+
+This analysis could be enriched with more statistical findings and just proper resolution of filling in blank-spaced entries. Moreover, the addition to feature engineering would have been beneficial in the initial process.
+
+Ending some of my thoughts, I feel I could have:
+1. Not induce entries into NA value entries so quickly
+
+2. Exploration into why there were 16 null values remaining, after our data-filling process
+
+3. Subsetted the original "df" data in a more strategic manner
+
+
+# Resources
+
+## Data Dictionary
+1. **ListingKey:**	Unique key for each listing, same value as the 'key' used in the listing object in the API.
+
+2. **ListingNumber:**	The number that uniquely identifies the listing to the public as displayed on the website.
+
+3. **ListingCreationDate:**	The date the listing was created.
+
+4. **CreditGrade:**	The Credit rating that was assigned at the time the listing went live. Applicable for listings pre-2009 period and will only be populated for those listings.
+
+5. **Term:**	The length of the loan expressed in months.
+
+6. **LoanStatus:** The current status of the loan: Cancelled,  Chargedoff, Completed, Current, Defaulted, FinalPaymentInProgress, PastDue. The PastDue status will be accompanied by a delinquency bucket.
+
+7. **ClosedDate:**	Closed date is applicable for Cancelled, Completed, Chargedoff and Defaulted loan statuses. 
+
+8. **BorrowerAPR:**	The Borrower's Annual Percentage Rate (APR) for the loan.
+
+9. **BorrowerRate:**	The Borrower's interest rate for this loan. 
+
+10. **LenderYield:**	The Lender yield on the loan. Lender yield is equal to the interest rate on the loan less the servicing fee.
+
+11. **EstimatedEffectiveYield:**	Effective yield is equal to the borrower interest rate 
+  + minus the servicing fee rate 
+  + minus estimated uncollected interest on charge-offs 
+  + plus estimated collected late fees.  Applicable for loans originated after July 2009.
+
+12. **EstimatedLoss:**	Estimated loss is the estimated principal loss on charge-offs. Applicable for loans originated after July 2009.
+
+13. **EstimatedReturn:**	The estimated return assigned to the listing at the time it was created. Estimated return is the difference between the Estimated Effective Yield and the Estimated Loss Rate. Applicable for loans originated after July 2009.
+
+14. **ProsperRating (numeric):**	The  Prosper Rating assigned at the time the listing was created: 0 - N/A, 1 - HR, 2 - E, 3 - D, 4 - C, 5 - B, 6 - A, 7 - AA.  Applicable for loans originated after July 2009.
+
+15. **ProsperRating (Alpha):**	The Prosper Rating assigned at the time the listing was created between AA - HR.  Applicable for loans originated after July 2009.
+
+16. **ProsperScore:**	A custom risk score built using historical Prosper data. The score ranges from 1-10, with 10 being the best, or lowest risk score.  Applicable for loans originated after July 2009.
+
+17. **ListingCategory:**	The category of the listing that the borrower selected when posting their listing: 0 - Not Available, 1 - Debt Consolidation, 2 - Home Improvement, 3 - Business, 4 - Personal Loan, 5 - Student Use, 6 - Auto, 7- Other, 8 - Baby&Adoption, 9 - Boat, 10 - Cosmetic Procedure, 11 - Engagement Ring, 12 - Green Loans, 13 - Household Expenses, 14 - Large Purchases, 15 - Medical/Dental, 16 - Motorcycle, 17 - RV, 18 - Taxes, 19 - Vacation, 20 - Wedding Loans
+
+18. **BorrowerState:**	The two letter abbreviation of the state of the address of the borrower at the time the Listing was created.
+
+19. **Occupation:**	The Occupation selected by the Borrower at the time they created the listing.
+
+20. **EmploymentStatus:** The employment status of the borrower at the time they posted the listing.
+
+21. **EmploymentStatusDuration:**	The length in months of the employment status at the time the listing was created.
+
+22. **IsBorrowerHomeowner:**	A Borrower will be classified as a homowner if they have a mortgage on their credit profile or provide documentation confirming they are a homeowner.
+
+23. **CurrentlyInGroup:**	Specifies whether or not the Borrower was in a group at the time the listing was created.
+
+24. **GroupKey:**	The Key of the group in which the Borrower is a member of. Value will be null if the borrower does not have a group affiliation.
+
+25. **DateCreditPulled:**	The date the credit profile was pulled. 
+
+26. **CreditScoreRangeLower:**	The lower value representing the range of the borrower's credit score as provided by a consumer credit rating agency.
+
+27. **CreditScoreRangeUpper:**	The upper value representing the range of the borrower's credit score as provided by a consumer credit rating agency. 
+
+28. **FirstRecordedCreditLine:**	The date the first credit line was opened.
+
+29. **CurrentCreditLines:**	Number of current credit lines at the time the credit profile was pulled.
+
+30. **OpenCreditLines:**	Number of open credit lines at the time the credit profile was pulled.
+
+31. **TotalCreditLinespast7years:**	Number of credit lines in the past seven years at the time the credit profile was pulled.
+
+32. **OpenRevolvingAccounts:**	Number of open revolving accounts at the time the credit profile was pulled.
+
+33. **OpenRevolvingMonthlyPayment:**	Monthly payment on revolving accounts at the time the credit profile was pulled.
+
+34. **InquiriesLast6Months:**	Number of inquiries in the past six months at the time the credit profile was pulled.
+
+35. **TotalInquiries:**	Total number of inquiries at the time the credit profile was pulled.
+
+36. **CurrentDelinquencies:**	Number of accounts delinquent at the time the credit profile was pulled.
+
+37. **AmountDelinquent:** Dollars delinquent at the time the credit profile was pulled.
+
+38. **DelinquenciesLast7Years:**	Number of delinquencies in the past 7 years at the time the credit profile was pulled.
+
+39. **PublicRecordsLast10Years:**	Number of public records in the past 10 years at the time the credit profile was pulled.
+
+40. **PublicRecordsLast12Months:**	Number of public records in the past 12 months at the time the credit profile was pulled.
+
+41. **RevolvingCreditBalance:**	Dollars of revolving credit at the time the credit profile was pulled.
+
+42. **BankcardUtilization:**	The percentage of available revolving credit that is utilized at the time the credit profile was pulled.
+
+43. **AvailableBankcardCredit:**	The total available credit via bank card at the time the credit profile was pulled.
+
+44. **TotalTrades:**	Number of trade lines ever opened at the time the credit profile was pulled.
+
+45. **TradesNeverDelinquent:**	Number of trades that have never been delinquent at the time the credit profile was pulled.
+
+46. **TradesOpenedLast6Months:**	Number of trades opened in the last 6 months at the time the credit profile was pulled.
+
+47. **DebtToIncomeRatio:**	The debt to income ratio of the borrower at the time the credit profile was pulled. This value is Null if the debt to income ratio is not available. This value is capped at 10.01 (any debt to income ratio larger than 1000% will be returned as 1001%).
+
+48. **IncomeRange:**	The income range of the borrower at the time the listing was created.
+
+49. **IncomeVerifiable:**	The borrower indicated they have the required documentation to support their income.
+
+50. **StatedMonthlyIncome:**	The monthly income the borrower stated at the time the listing was created.
+
+51. **LoanKey:**	Unique key for each loan. This is the same key that is used in the API. 
+
+52. **TotalProsperLoans:**	Number of Prosper loans the borrower at the time they created this listing. This value will be null if the borrower had no prior loans. 
+
+53. **TotalProsperPaymentsBilled:**	Number of on time payments the borrower made on Prosper loans at the time they created this listing. This value will be null if the borrower had no prior loans.
+
+54. **OnTimeProsperPayments:**	Number of on time payments the borrower had made on Prosper loans at the time they created this listing. This value will be null if the borrower has no prior loans.
+
+55. **ProsperPaymentsLessThanOneMonthLate:**	Number of payments the borrower made on Prosper loans that were less than one month late at the time they created this listing. This value will be null if the borrower had no prior loans. 
+
+56. **ProsperPaymentsOneMonthPlusLate:**	Number of payments the borrower made on Prosper loans that were greater than one month late at the time they created this listing. This value will be null if the borrower had no prior loans.
+
+57. **ProsperPrincipalBorrowed:**	Total principal borrowed on Prosper loans at the time the listing was created. This value will be null if the borrower had no prior loans.
+
+58. **ProsperPrincipalOutstanding:**	Principal outstanding on Prosper loans at the time the listing was created. This value will be null if the borrower had no prior loans.
+
+59. **ScorexChangeAtTimeOfListing:**	Borrower's credit score change at the time the credit profile was pulled. This will be the change relative to the borrower's last Prosper loan. This value will be null if the borrower had no prior loans.
+
+60. **LoanCurrentDaysDelinquent:**	The number of days delinquent. 
+
+61. **LoanFirstDefaultedCycleNumber:**	The cycle the loan was charged off. If the loan has not charged off the value will be null. 
+
+62. **LoanMonthsSinceOrigination:**	Number of months since the loan originated.
+
+63. **LoanNumber:**	Unique numeric value associated with the loan.
+
+64. **LoanOriginalAmount:**	The origination amount of the loan.
+
+65. **LoanOriginationDate:**	The date the loan was originated.
+
+66. **LoanOriginationQuarter:**	The quarter in which the loan was originated.
+
+67. **MemberKey:**	The unique key that is associated with the borrower. This is the same identifier that is used in the API member object. 
+68. MonthlyLoanPayment	The scheduled monthly loan payment.
+
+69. **LP_CustomerPayments:**	Pre charge-off cumulative gross payments made by the borrower on the loan. If the loan has charged off, this value will exclude any recoveries.
+
+70. **LP_CustomerPrincipalPayments:**	Pre charge-off cumulative principal payments made by the borrower on the loan. If the loan has charged off, this value will exclude any recoveries.
+
+71. **LP_InterestandFees:**	Pre charge-off cumulative interest and fees paid by the borrower. If the loan has charged off, this value will exclude any recoveries.
+
+72. **LP_ServiceFees:**	Cumulative service fees paid by the investors who have invested in the loan. 
+
+73. **LP_CollectionFees:**	Cumulative collection fees paid by the investors who have invested in the loan.
+
+74. **LP_GrossPrincipalLoss:**	The gross charged off amount of the loan.
+
+75. **LP_NetPrincipalLoss:**	The principal that remains uncollected after any recoveries.
+
+76. **LP_NonPrincipalRecoverypayments:**	The interest and fee component of any recovery payments. The current payment policy applies payments in the following order: Fees, interest, principal.
+
+77. **PercentFunded:**	Percent the listing was funded.
+Recommendations	Number of recommendations the borrower had at the time the listing was created.
+
+78. **InvestmentFromFriendsCount:**	Number of friends that made an investment in the loan.
+
+79. **InvestmentFromFriendsAmount:**	Dollar amount of investments that were made by friends.
+
+80. **Investors:**	The number of investors that funded the loan.

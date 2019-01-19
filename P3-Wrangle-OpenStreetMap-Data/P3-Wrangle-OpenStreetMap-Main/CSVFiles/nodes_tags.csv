@@ -1,0 +1,2512 @@
+id,key,value,type
+30029498,ref,35,regular
+30029498,exit_to,Strobridge Avenue,regular
+30029498,highway,motorway_junction,regular
+31830276,source,PGS,regular
+31831307,source,PGS,regular
+33154450,ref,26,regular
+33154450,exit_to,Tennyson Road,regular
+33154450,highway,motorway_junction,regular
+35706284,created_by,JOSM,regular
+35706445,created_by,JOSM,regular
+35706574,barrier,gate,regular
+35706574,created_by,JOSM,regular
+51665387,created_by,JOSM,regular
+53019140,highway,stop,regular
+53021162,highway,turning_circle,regular
+53027114,highway,turning_circle,regular
+53030351,highway,stop,regular
+53030665,highway,turning_circle,regular
+53041222,highway,stop,regular
+53046610,highway,stop,regular
+53056482,highway,turning_circle,regular
+53061162,highway,traffic_signals,regular
+53062385,highway,turning_circle,regular
+53074476,highway,turning_circle,regular
+53074807,highway,turning_circle,regular
+53078080,highway,traffic_signals,regular
+53079621,highway,turning_circle,regular
+53080190,highway,turning_circle,regular
+53092580,highway,traffic_signals,regular
+53100349,highway,turning_circle,regular
+53104646,source,photograph,regular
+53104646,highway,traffic_signals,regular
+53105838,highway,turning_circle,regular
+53110237,highway,turning_circle,regular
+53113946,highway,stop,regular
+53118543,highway,turning_circle,regular
+53130273,highway,turning_circle,regular
+53134364,highway,turning_circle,regular
+53140604,highway,turning_circle,regular
+53146181,highway,turning_circle,regular
+53147607,highway,turning_circle,regular
+53148887,highway,turning_circle,regular
+53152493,highway,turning_circle,regular
+53157781,highway,turning_circle,regular
+56114269,created_by,JOSM,regular
+57807064,highway,turning_circle,regular
+57817257,highway,turning_circle,regular
+57820785,highway,turning_circle,regular
+57822005,highway,turning_circle,regular
+57826456,highway,turning_circle,regular
+57827533,highway,traffic_signals,regular
+57830073,highway,turning_circle,regular
+57857433,source,Yahoo,regular
+57857433,highway,turning_circle,regular
+57859935,highway,traffic_signals,regular
+57866797,highway,turning_circle,regular
+57883720,highway,turning_circle,regular
+57910873,highway,turning_circle,regular
+57917807,highway,turning_circle,regular
+57938590,highway,turning_circle,regular
+57953190,highway,turning_circle,regular
+59772796,created_by,JOSM,regular
+65279895,highway,stop,regular
+65281061,ref,2,regular
+65281061,source,http://www.dot.ca.gov/hq/traffops/signtech/calnexus/pdf/80.pdf,regular
+65281061,exit_to,4th Street; Embarcadero,regular
+65281061,highway,motorway_junction,regular
+65282474,highway,traffic_signals,regular
+65282474,traffic_signals,signal,regular
+65287360,highway,traffic_signals,regular
+65295907,highway,traffic_signals,regular
+65295907,sound,yes,traffic_signals
+65299375,highway,turning_circle,regular
+65302590,highway,turning_circle,regular
+65303556,highway,traffic_signals,regular
+65303556,turn_restrictions,no,regular
+65315796,crossing,traffic_signals,regular
+65315796,highway,crossing,regular
+65321839,turn_restrictions,no,regular
+65327144,turn_restrictions,no,regular
+65327650,highway,traffic_signals,regular
+65329084,highway,traffic_signals,regular
+65330704,highway,turning_circle,regular
+65334190,highway,traffic_signals,regular
+65343053,highway,traffic_signals,regular
+65344762,source,Yahoo,regular
+65344762,highway,traffic_signals,regular
+65345282,highway,traffic_signals,regular
+65345282,turn_restrictions,no,regular
+65369644,highway,stop,regular
+65388795,highway,turning_circle,regular
+65390484,highway,turning_circle,regular
+65391865,source,photograph,regular
+65391865,highway,traffic_signals,regular
+65393025,highway,turning_circle,regular
+65396263,highway,turning_circle,regular
+65398742,highway,turning_circle,regular
+65407446,highway,stop,regular
+65415493,highway,stop,regular
+65422773,highway,traffic_signals,regular
+65448911,highway,crossing,regular
+65460110,highway,traffic_signals,regular
+65468803,highway,turning_circle,regular
+65480065,noexit,yes,regular
+65484066,highway,turning_circle,regular
+65491747,highway,traffic_signals,regular
+65496217,highway,turning_circle,regular
+65500407,highway,turning_circle,regular
+65506344,highway,turning_circle,regular
+80536363,created_by,JOSM,regular
+84926443,created_by,JOSM,regular
+84926974,created_by,JOSM,regular
+84927564,created_by,JOSM,regular
+84940856,barrier,cattle_grid,regular
+87340043,created_by,JOSM,regular
+87342951,created_by,JOSM,regular
+87345038,created_by,JOSM,regular
+87376381,created_by,JOSM,regular
+92004297,created_by,JOSM,regular
+92024701,created_by,JOSM,regular
+92799134,created_by,JOSM,regular
+92818713,created_by,JOSM,regular
+92841961,created_by,JOSM,regular
+98443356,created_by,JOSM,regular
+98447545,created_by,JOSM,regular
+124790994,created_by,JOSM,regular
+127027197,created_by,JOSM,regular
+127028179,created_by,JOSM,regular
+127029096,created_by,JOSM,regular
+127030155,created_by,JOSM,regular
+128894657,created_by,JOSM,regular
+150956037,ele,4,regular
+150956037,name,Belle Haven,regular
+150956037,is_in,"San Mateo,California,Calif.,CA,USA",regular
+150956037,place,hamlet,regular
+150956037,id,253359,gnis
+150956037,gnis:Class,Populated Place,regular
+150956037,gnis:County,San Mateo,regular
+150956037,gnis:ST_num,06,regular
+150956037,import_uuid,bb7269ee-502a-5391-8056-e3ce0e66489c,regular
+150956037,gnis:ST_alpha,CA,regular
+150956037,gnis:County_num,081,regular
+162930593,created_by,JOSM,regular
+162950692,created_by,JOSM,regular
+162976783,created_by,JOSM,regular
+162990035,created_by,JOSM,regular
+167039540,created_by,JOSM,regular
+167051541,created_by,JOSM,regular
+167068777,created_by,JOSM,regular
+167114348,created_by,JOSM,regular
+167115261,created_by,JOSM,regular
+167139749,created_by,JOSM,regular
+167151752,created_by,JOSM,regular
+167177090,created_by,JOSM,regular
+198531979,created_by,JOSM,regular
+227828031,created_by,JOSM,regular
+227829287,created_by,JOSM,regular
+227830532,created_by,JOSM,regular
+227868128,created_by,JOSM,regular
+227869515,created_by,JOSM,regular
+239616707,highway,turning_circle,regular
+243683435,created_by,JOSM,regular
+243796007,highway,turning_circle,regular
+249041874,created_by,JOSM,regular
+249069009,created_by,JOSM,regular
+249069150,created_by,JOSM,regular
+249185099,highway,turning_circle,regular
+253104917,ref,429A,regular
+253104917,exit_to,Candlestick Park,regular
+253104917,highway,motorway_junction,regular
+257073907,created_by,JOSM,regular
+257144485,highway,turning_circle,regular
+257428577,created_by,JOSM,regular
+257668996,highway,turning_circle,regular
+258586965,created_by,JOSM,regular
+258645663,highway,turning_circle,regular
+258758553,highway,traffic_signals,regular
+258758553,turn_restrictions,no,regular
+258846310,created_by,JOSM,regular
+258847606,created_by,JOSM,regular
+258910951,traffic_signals,no,regular
+258959030,created_by,JOSM,regular
+258964133,highway,traffic_signals,regular
+258964133,sound,yes,traffic_signals
+259079968,created_by,JOSM,regular
+259097981,created_by,JOSM,regular
+259114047,created_by,JOSM,regular
+259186897,created_by,JOSM,regular
+259193422,created_by,JOSM,regular
+259227750,created_by,JOSM,regular
+259231692,created_by,JOSM,regular
+259265069,created_by,JOSM,regular
+259300034,created_by,JOSM,regular
+259473304,created_by,JOSM,regular
+259475546,created_by,JOSM,regular
+259487068,created_by,JOSM,regular
+259718256,created_by,JOSM,regular
+259982686,created_by,JOSM,regular
+260092676,created_by,JOSM,regular
+260242025,created_by,JOSM,regular
+260242322,created_by,JOSM,regular
+260276328,created_by,JOSM,regular
+260296681,created_by,JOSM,regular
+260336116,highway,traffic_signals,regular
+260542756,highway,turning_circle,regular
+260697963,created_by,JOSM,regular
+260873425,created_by,JOSM,regular
+260895635,created_by,JOSM,regular
+262105131,created_by,JOSM,regular
+262120904,created_by,JOSM,regular
+262294346,created_by,JOSM,regular
+262732410,created_by,JOSM,regular
+262732816,created_by,JOSM,regular
+262732979,created_by,JOSM,regular
+262920398,highway,turning_circle,regular
+262984603,created_by,JOSM,regular
+262986464,created_by,JOSM,regular
+262987530,created_by,JOSM,regular
+262989130,created_by,JOSM,regular
+262990821,created_by,JOSM,regular
+263019451,created_by,JOSM,regular
+263020194,created_by,JOSM,regular
+263021203,created_by,JOSM,regular
+263023337,created_by,JOSM,regular
+263071247,created_by,JOSM,regular
+263072813,created_by,JOSM,regular
+263076756,created_by,JOSM,regular
+263076933,created_by,JOSM,regular
+263077829,created_by,JOSM,regular
+263078752,created_by,JOSM,regular
+263080440,created_by,JOSM,regular
+263084908,power,tower,regular
+263572869,created_by,JOSM,regular
+263573574,created_by,JOSM,regular
+263574308,created_by,JOSM,regular
+263575488,created_by,JOSM,regular
+263579349,created_by,JOSM,regular
+263579449,created_by,JOSM,regular
+263919613,created_by,JOSM,regular
+263922183,created_by,JOSM,regular
+264406258,created_by,JOSM,regular
+264408331,created_by,JOSM,regular
+264411854,created_by,JOSM,regular
+264693200,created_by,JOSM,regular
+264697391,created_by,JOSM,regular
+264801026,created_by,JOSM,regular
+265828970,created_by,JOSM,regular
+266049701,created_by,JOSM,regular
+266052216,created_by,JOSM,regular
+266231079,created_by,JOSM,regular
+267292526,highway,turning_circle,regular
+267300769,power,tower,regular
+267989837,created_by,JOSM,regular
+270661497,created_by,JOSM,regular
+272139812,created_by,JOSM,regular
+274479402,highway,crossing,regular
+279669354,created_by,JOSM,regular
+281363250,highway,traffic_signals,regular
+281555582,created_by,JOSM,regular
+281561674,name,Arco,regular
+281561674,amenity,fuel,regular
+281658251,amenity,bicycle_parking,regular
+281658251,created_by,JOSM,regular
+288992382,created_by,JOSM,regular
+296899022,power,tower,regular
+297170899,power,tower,regular
+298601441,created_by,JOSM,regular
+299380594,highway,turning_circle,regular
+299507595,created_by,GPSBabel-1.3.5,regular
+300723340,highway,crossing,regular
+300723340,crossing,traffic_signals,regular
+301301812,created_by,JOSM,regular
+302481772,created_by,JOSM,regular
+302481943,created_by,JOSM,regular
+307446857,created_by,JOSM,regular
+308813313,amenity,post_box,regular
+310972981,name,Kentucky Fried Chicken,regular
+310972981,amenity,fast_food,regular
+310972981,created_by,JOSM,regular
+311447689,amenity,drinking_water,regular
+312031036,amenity,drinking_water,regular
+313868119,highway,crossing,regular
+314115623,name,Corso Trattoria,regular
+314115623,amenity,restaurant,regular
+314115623,cuisine,italian,regular
+317081517,amenity,telephone,regular
+317081517,created_by,Potlatch 0.10f,regular
+318102247,power,tower,regular
+323491247,highway,turning_circle,regular
+332744171,amenity,post_box,regular
+338892410,source,Yahoo,regular
+338892410,highway,turning_circle,regular
+343311761,name,76,regular
+343311761,amenity,fuel,regular
+343311761,operator,76,regular
+343610981,name,Zand's,regular
+343610981,shop,grocery,regular
+343610981,amenity,restaurant,regular
+343610981,cuisine,mediterranean,regular
+343610981,website,http://www.zandpastry.com/,regular
+344196175,name,USS Thompson,regular
+344196175,historic,wreck,regular
+344196175,description,Ship Wreck,regular
+344196175,type,wreck,seamark
+350556426,power,tower,regular
+354198825,name,Picnic Area #2,regular
+354198825,tourism,picnic_site,regular
+354198825,fireplace,yes,regular
+356697559,name,Stern Grove,regular
+356697559,amenity,music_venue,regular
+358762457,ele,115,regular
+358762457,boat,no,regular
+358762457,name,Briones Reservoir,regular
+358762457,landuse,reservoir,regular
+358762457,created,01/19/1981,gnis
+358762457,state_id,06,gnis
+358762457,county_id,013,gnis
+358762457,feature_id,219847,gnis
+358766391,ele,13,regular
+358766391,name,Gansberger School,regular
+358766391,amenity,school,regular
+358766391,created,01/19/1981,gnis
+358766391,state_id,06,gnis
+358766391,county_id,001,gnis
+358766391,feature_id,224033,gnis
+358770638,ele,11,regular
+358770638,name,Menlo Oaks Elementary School (historical),regular
+358770638,amenity,school,regular
+358770638,edited,05/15/2007,gnis
+358770638,created,06/14/2000,gnis
+358770638,state_id,06,gnis
+358770638,county_id,081,gnis
+358770638,feature_id,228509,gnis
+358774961,ele,56,regular
+358774961,name,West Contra Costa Adult Education School,regular
+358774961,amenity,school,regular
+358774961,edited,05/25/2007,gnis
+358774961,created,06/14/2000,gnis
+358774961,state_id,06,gnis
+358774961,county_id,013,gnis
+358774961,feature_id,232817,gnis
+358778604,ele,527,regular
+358778604,name,Mount Tamalpais West Point,regular
+358778604,natural,peak,regular
+358778604,created,01/19/1981,gnis
+358778604,state_id,06,gnis
+358778604,county_id,041,gnis
+358778604,feature_id,237510,gnis
+358803592,ele,66,regular
+358803592,name,First Saint John's United Methodist Church (Historical),regular
+358803592,amenity,place_of_worship,regular
+358803592,religion,christian,regular
+358803592,denomination,methodist,regular
+358803592,created,11/01/1994,gnis
+358803592,state_id,06,gnis
+358803592,county_id,075,gnis
+358803592,feature_id,1655636,gnis
+358805101,ele,21,regular
+358805101,name,Lighthouse Full Gospel Church,regular
+358805101,amenity,place_of_worship,regular
+358805101,religion,christian,regular
+358805101,created,01/01/1995,gnis
+358805101,state_id,06,gnis
+358805101,county_id,075,gnis
+358805101,feature_id,1657049,gnis
+358809102,ele,57,regular
+358809102,name,Berkeley Seventh Day Adventist Church,regular
+358809102,amenity,place_of_worship,regular
+358809102,religion,christian,regular
+358809102,denomination,seventh_day_adventist,regular
+358809102,created,02/01/1995,gnis
+358809102,state_id,06,gnis
+358809102,county_id,001,gnis
+358809102,feature_id,1661938,gnis
+358814786,ele,248,regular
+358814786,name,KQEC-TV (San Francisco),regular
+358814786,man_made,tower,regular
+358814786,created,07/01/1994,gnis
+358814786,state_id,06,gnis
+358814786,county_id,075,gnis
+358814786,feature_id,1665179,gnis
+358819245,ele,7,regular
+358819245,name,Lockwood Elementary School,regular
+358819245,amenity,school,regular
+358819245,created,05/08/1996,gnis
+358819245,state_id,06,gnis
+358819245,county_id,001,gnis
+358819245,feature_id,1692728,gnis
+358820523,ele,12,regular
+358820523,name,Bethel Temple Pentecostal Church,regular
+358820523,amenity,place_of_worship,regular
+358820523,religion,christian,regular
+358820523,city,Richmond,addr
+358820523,street,Cutting Boulevard,addr
+358820523,denomination,pentecostal,regular
+358820523,created,11/22/1996,gnis
+358820523,postcode,94804,addr
+358820523,state_id,06,gnis
+358820523,county_id,013,gnis
+358820523,feature_id,1701449,gnis
+358820523,housenumber,3429,addr
+358821116,ele,20,regular
+358821116,name,Vista Christian School,regular
+358821116,amenity,school,regular
+358821116,created,11/22/1996,gnis
+358821116,state_id,06,gnis
+358821116,county_id,013,gnis
+358821116,feature_id,1701666,gnis
+358830536,ele,25,regular
+358830536,name,Roger Williams Elementary School,regular
+358830536,amenity,school,regular
+358830536,created,04/06/1998,gnis
+358830536,state_id,06,gnis
+358830536,county_id,081,gnis
+358830536,feature_id,1785777,gnis
+358830900,ele,2,regular
+358830900,name,Sunnybrae Park,regular
+358830900,leisure,park,regular
+358830900,created,04/06/1998,gnis
+358830900,state_id,06,gnis
+358830900,county_id,081,gnis
+358830900,feature_id,1786022,gnis
+358832553,ele,13,regular
+358832553,name,Heatherwood Park,regular
+358832553,leisure,park,regular
+358832553,created,07/20/1998,gnis
+358832553,state_id,06,gnis
+358832553,county_id,041,gnis
+358832553,feature_id,1800504,gnis
+358851384,ele,30,regular
+358851384,name,Mills Terrace Christian Church,regular
+358851384,amenity,place_of_worship,regular
+358851384,religion,christian,regular
+358851384,created,09/11/2002,gnis
+358851384,state_id,06,gnis
+358851384,county_id,001,gnis
+358851384,feature_id,1961767,gnis
+358851603,ele,6,regular
+358851603,name,Center Street Baptist Church,regular
+358851603,amenity,place_of_worship,regular
+358851603,religion,christian,regular
+358851603,street,Center Street,addr
+358851603,denomination,baptist,regular
+358851603,created,09/11/2002,gnis
+358851603,state_id,06,gnis
+358851603,county_id,001,gnis
+358851603,feature_id,1961951,gnis
+358851603,housenumber,940,addr
+358855059,ele,135,regular
+358855059,name,Pilgrim Temple Church,regular
+358855059,amenity,place_of_worship,regular
+358855059,religion,christian,regular
+358855059,created,05/22/2006,gnis
+358855059,state_id,06,gnis
+358855059,county_id,001,gnis
+358855059,feature_id,2087424,gnis
+358857685,ele,12,regular
+358857685,name,Monarch Academy,regular
+358857685,amenity,school,regular
+358857685,created,05/25/2007,gnis
+358857685,state_id,06,gnis
+358857685,county_id,001,gnis
+358857685,feature_id,2124696,gnis
+359082162,created_by,Potlatch 0.10f,regular
+359082162,street,Montgomery Street,addr
+359082162,housenumber,1157,addr
+360559125,name,Noe Valley Cyclery,regular
+360559125,shop,bicycle,regular
+365489481,name,Mijita Cocina Mexicana,regular
+365489481,amenity,restaurant,regular
+365489481,cuisine,mexican,regular
+366352411,name,La Fiesta Mexican Restaurant,regular
+366352411,amenity,restaurant,regular
+368170001,ele,16,regular
+368170001,name,McKeon Memorial Library,regular
+368170001,source,USGS Geonames,regular
+368170001,amenity,library,regular
+368170001,state,CA,addr
+368170001,reviewed,no,gnis
+368170001,feature_id,1786234,gnis
+368170001,county_name,San Mateo,gnis
+368170001,import_uuid,57871b70-0100-4405-bb30-88b2e001a944,gnis
+373647512,power,tower,regular
+373671089,power,tower,regular
+373814307,source,Bing,regular
+376235927,name,Starbucks,regular
+376235927,phone,+1 415 4090840,regular
+376235927,amenity,cafe,regular
+376235927,cuisine,coffee_shop,regular
+376235927,smoking,no,regular
+376235927,city,San Francisco,addr
+376235927,state,CA,addr
+376235927,street,Beach Street,addr
+376235927,postcode,94109,addr
+376235927,opening_hours,Mo-Fr 05:00-21:30;Sa-Su 05:00-22:00,regular
+376235927,internet_access,wlan,regular
+376235927,housenumber,685,addr
+381950500,amenity,post_box,regular
+381950500,operator,USPS,regular
+389416987,source,survey,regular
+389416987,amenity,post_box,regular
+389416987,capacity,1,regular
+389416987,operator,USPS,regular
+392204997,name,Sutter Street Post Office,regular
+392204997,phone,+1 415 552 2330,regular
+392204997,amenity,post_office,regular
+392204997,alt_name,Sutter Station,regular
+392204997,operator,USPS,regular
+392204997,city,San Francisco,addr
+392204997,state,CA,addr
+392204997,street,Sutter Street,addr
+392204997,postcode,94104,addr
+392204997,opening_hours,Mo-Fr 08:00-17:00,regular
+392204997,housenumber,150,addr
+392204997,sfgov.org:OBJECTID,42,regular
+392204997,sfgov.org:OFFICE_TYP,Post Office,regular
+394221609,amenity,parking_entrance,regular
+410783748,man_made,tower,regular
+411276940,name,Fire Fighter's Memorial,regular
+411276940,historic,memorial,regular
+415565991,amenity,post_box,regular
+415565991,capacity,4,regular
+415565991,operator,USPS,regular
+415565991,source,survey,regular
+416076892,power,tower,regular
+416809989,amenity,fuel,regular
+416809989,city,El Cerrito,addr
+416809989,street,San Pablo Avenue,addr
+416809989,housenumber,11615,addr
+417620238,power,tower,regular
+417629042,power,tower,regular
+418954628,highway,turning_circle,regular
+420034459,name,Crepevine,regular
+420034459,phone,+1 510 7051836,regular
+420034459,amenity,restaurant,regular
+420034459,cuisine,crepe,regular
+420034459,smoking,no,regular
+420034459,drive_in,no,regular
+420034459,takeaway,yes,regular
+420034459,city,Berkeley,addr
+420034459,unit,102,addr
+420034459,state,CA,addr
+420034459,wheelchair,yes,regular
+420034459,street,Shattuck Avenue,addr
+420034459,microbrewery,no,regular
+420034459,postcode,94709,addr
+420034459,outdoor_seating,yes,regular
+420034459,housenumber,1600,addr
+420477611,city,Berkeley,addr
+420477611,street,Cedar Street,addr
+420477611,housenumber,2287,addr
+420515250,highway,bus_stop,regular
+420515250,operator,San Francisco Municipal Railway,regular
+420515250,route_ref,14;49,regular
+420515250,shelter,no,regular
+420515250,source,survey,regular
+420515250,ticker,no,regular
+429650288,fee,no,regular
+429650288,source,survey,regular
+429650288,amenity,bicycle_parking,regular
+429650288,outside,yes,regular
+429650288,capacity,2,regular
+433570579,highway,crossing,regular
+435049542,city,Berkeley,addr
+435049542,street,Rose Street,addr
+435049542,housenumber,1741,addr
+435049944,city,Berkeley,addr
+435049944,street,Eunice Street,addr
+435049944,housenumber,2201,addr
+440602778,city,Berkeley,addr
+440602778,street,Berryman Street,addr
+440602778,housenumber,2040,addr
+441295707,barrier,gate,regular
+441518961,highway,turning_circle,regular
+441993726,highway,turning_circle,regular
+443611720,city,Berkeley,addr
+443611720,street,Northgate Avenue,addr
+443611720,housenumber,50,addr
+443810948,amenity,toilets,regular
+446235110,name,Ashby Flowers,regular
+446235110,shop,florist,regular
+451649630,ele,93,regular
+451649630,amenity,toilets,regular
+452360776,highway,turning_circle,regular
+454952324,city,Berkeley,addr
+454952324,street,Shasta Road,addr
+454952324,housenumber,2934,addr
+460378427,city,Berkeley,addr
+460378427,street,Spruce Street,addr
+460378427,housenumber,1121,addr
+460378527,city,Berkeley,addr
+460378527,street,Cragmont Avenue,addr
+460378527,housenumber,1149,addr
+469612449,city,Berkeley,addr
+469612449,street,Regal Road,addr
+469612449,housenumber,983,addr
+469612675,bus,yes,regular
+469612675,name,Grizzly Peak Blvd & Stevenson Av,regular
+469612675,highway,bus_stop,regular
+469612675,operator,AC Transit,regular
+469612675,public_transport,platform,regular
+472257405,name,Italian Colors,regular
+472257405,amenity,restaurant,regular
+485479068,ele,99,regular
+485479068,amenity,toilets,regular
+503833447,fee,no,regular
+503833447,amenity,toilets,regular
+511981390,amenity,toilets,regular
+522378156,highway,turning_circle,regular
+539604069,city,Berkeley,addr
+539604069,state,CA,addr
+539604069,street,Grant Street,addr
+539604069,country,US,addr
+539604069,housenumber,2811,addr
+540716561,fee,no,regular
+540716561,amenity,bicycle_parking,regular
+540716561,covered,no,regular
+540716561,capacity,40,regular
+540716561,bicycle_parking,stands,regular
+541006534,crossing,uncontrolled,regular
+541006534,flashing_lights,yes,regular
+541006534,highway,crossing,regular
+547545402,name,Asena,regular
+547545402,amenity,restaurant,regular
+547688007,barrier,gate,regular
+550875759,name,Big O'Tires,regular
+554196107,barrier,gate,regular
+559822367,street,Union Street,addr
+559822367,housenumber,1920,addr
+567015118,highway,turning_circle,regular
+568214170,city,Berkeley,addr
+568214170,street,Los Angeles Avenue,addr
+568214170,housenumber,2063,addr
+574012863,name,Lucky,regular
+574012863,shop,supermarket,regular
+574012863,amenity,pharmacy,regular
+574012863,city,Union City,addr
+574012863,street,Union Landing Boulevard,addr
+574012863,postcode,94587,addr
+585968188,name,Asham Yoga,regular
+585968188,sport,gymnastics,regular
+595800180,railway,level_crossing,regular
+595963642,highway,traffic_signals,regular
+601342298,highway,turning_circle,regular
+612025486,highway,turning_circle,regular
+615143888,railway,tram_stop,regular
+621818379,name,Post Hotel,regular
+621818379,source,survey,regular
+621818379,tourism,hotel,regular
+621818379,city,San Francisco,addr
+621818379,street,Post Street,addr
+621818379,country,US,addr
+621818379,housenumber,589,addr
+635275099,housenumber,Building E,addr
+635275099,street,Fort Mason Center,addr
+635275099,name,Headquarters of San Francisco Maritime National Historical Park,regular
+635275099,office,government,regular
+635275099,phone,4155617000,regular
+635275099,website,http://www.nps.gov/safr,regular
+647656706,city,San Francisco,addr
+647656706,state,CA,addr
+647656706,street,Steiner Street,addr
+647656706,country,US,addr
+647656706,postcode,94117,addr
+647656706,housenumber,201,addr
+648553637,amenity,bench,regular
+650083262,city,Berkeley,addr
+650083262,street,Berryman Street,addr
+650083262,housenumber,1808,addr
+650083466,city,Berkeley,addr
+650083466,street,The Alameda,addr
+650083466,housenumber,964,addr
+653124844,amenity,bench,regular
+661807219,highway,traffic_signals,regular
+664803795,highway,crossing,regular
+670132163,amenity,bureau_de_change,regular
+670245582,amenity,post_box,regular
+670245582,capacity,5,regular
+670245582,operator,US Mail Service,regular
+674538020,city,Berkeley,addr
+674538020,street,Yosemite Road,addr
+674538020,housenumber,1994,addr
+674538127,city,Berkeley,addr
+674538127,street,Montrose Road,addr
+674538127,housenumber,194,addr
+683790593,highway,traffic_signals,regular
+703006785,traffic_calming,hump,regular
+712646128,housenumber,3421,addr
+712646128,name,Wayland's Meat,regular
+712646128,phone,+1-510-530-3344,regular
+712646128,shop,butcher,regular
+728166342,highway,crossing,regular
+763662547,highway,crossing,regular
+763662547,crossing,traffic_signals,regular
+766722989,foot,yes,regular
+766722989,barrier,gate,regular
+766722989,bicycle,yes,regular
+767846778,highway,crossing,regular
+768432096,railway,level_crossing,regular
+770690204,name,Trader Joe's,regular
+770690204,shop,supermarket,regular
+778894172,city,Berkeley,addr
+778894172,street,Martin Luther King Jr Way,addr
+778894172,housenumber,1428,addr
+778894279,city,Berkeley,addr
+778894279,street,Martin Luther King Jr Way,addr
+778894279,housenumber,1422,addr
+778894384,city,Berkeley,addr
+778894384,street,Vine Street,addr
+778894384,housenumber,1952,addr
+792213620,city,Berkeley,addr
+792213620,street,Keeler Avenue,addr
+792213620,housenumber,1023,addr
+822610819,highway,crossing,regular
+822610819,crossing,uncontrolled,regular
+825914936,name,Grubstake,regular
+825914936,phone,+1 (415) 673 8268,regular
+825914936,source,survey,regular
+825914936,amenity,restaurant,regular
+825914936,cuisine,burger,regular
+825914936,website,http://sfgrubstake.com,regular
+843135087,amenity,parking,regular
+899814784,highway,traffic_signals,regular
+911315465,name,SBFD - Station 51,regular
+911315465,phone,16506167096,regular
+911315465,amenity,fire_station,regular
+911315465,street,El Camino Real,addr
+911315465,postcode,94066,addr
+911315465,housenumber,555,addr
+914953854,source,Yahoo,regular
+914953854,railway,level_crossing,regular
+919334808,highway,traffic_signals,regular
+937404668,amenity,shelter,regular
+994490722,highway,bus_stop,regular
+994490722,operator,San Francisco Municipal Railway,regular
+994490722,route_ref,27,regular
+994490722,shelter,yes,regular
+994490722,source,survey,regular
+994490722,ticker,yes,regular
+1014233836,shop,vacant,regular
+1014233836,city,Union City,addr
+1014233836,street,Decoto Road,addr
+1014233836,postcode,94587,addr
+1014233836,housenumber,1764,addr
+1016080060,source,survey,regular
+1016080060,amenity,post_box,regular
+1016080060,operator,USPS,regular
+1016080060,quantity,2,regular
+1019495681,name,Niles Liquors & Mini-mart,regular
+1019495681,shop,convenience,regular
+1019495681,city,Union City,addr
+1019495681,state,CA,addr
+1019495681,street,Alvarado-Niles Road,addr
+1019495681,postcode,94587,addr
+1019495681,housenumber,34359,addr
+1040490629,amenity,restaurant,regular
+1040490629,cuisine,thai,regular
+1040561235,atm,yes,regular
+1040561235,name,1st United Services Credit Union,regular
+1040561235,amenity,bank,regular
+1040561235,city,Union City,addr
+1040561235,state,CA,addr
+1040561235,street,Alvarado-Niles Road,addr
+1040561235,postcode,94587,addr
+1040561235,housenumber,33131,addr
+1041059722,bulb,no,regular
+1041059722,highway,bus_stop,regular
+1041059722,operator,San Francisco Municipal Railway,regular
+1041059722,route_ref,28;91 Owl,regular
+1041059722,shelter,no,regular
+1041059722,source,survey,regular
+1041059722,ticker,no,regular
+1042144955,name,San Francisco VA Medical Center Heliport,regular
+1042144955,source,ourairports.com,regular
+1042144955,aeroway,helipad,regular
+1044259873,atm,yes,regular
+1044259873,name,Chase,regular
+1044259873,amenity,bank,regular
+1050359233,name,Marin Suites,regular
+1050359233,tourism,motel,regular
+1050750047,building,yes,regular
+1055589022,barrier,bollard,regular
+1071323948,name,Fashion Plaza,regular
+1071323948,shop,clothes,regular
+1071323948,city,Union City,addr
+1071323948,street,Decoto Road,addr
+1071323948,postcode,94587,addr
+1071323948,housenumber,1680,addr
+1073987840,power,tower,regular
+1073988483,power,tower,regular
+1110824413,name,Le Boulanger,regular
+1110824413,phone,(650) 568-9395,regular
+1110824413,source,"City of Redwood City, CA 1013",regular
+1110824413,amenity,cafe,regular
+1110824413,cuisine,sandwich,regular
+1110824413,website,http://www.leboulanger.com,regular
+1110824413,city,Redwood City,addr
+1110824413,street,Hamilton Street,addr
+1110824413,postcode,94063,addr
+1110824413,housenumber,2225,addr
+1110824413,addr_id,6635,redwood_city_ca
+1122171427,highway,crossing,regular
+1130244290,crossing,uncontrolled,regular
+1130244290,highway,crossing,regular
+1134953819,emergency,phone,regular
+1137746832,highway,stop,regular
+1140535447,name,H&R Block,regular
+1140535447,office,accountant,regular
+1140535447,city,Berkeley,addr
+1140535447,wheelchair,yes,regular
+1140535447,street,University Avenue,addr
+1140535447,housenumber,1900,addr
+1167768149,bulb,no,regular
+1167768149,highway,bus_stop,regular
+1167768149,operator,San Francisco Municipal Railway,regular
+1167768149,route_ref,43,regular
+1167768149,shelter,yes,regular
+1167768149,source,survey,regular
+1167768149,ticker,yes,regular
+1206794755,highway,crossing,regular
+1221046242,crossing,traffic_signals,regular
+1221046242,highway,crossing,regular
+1221046475,highway,crossing,regular
+1221102891,highway,crossing,regular
+1221414466,atm,yes,regular
+1221414466,name,USBank,regular
+1221414466,amenity,bank,regular
+1223019579,note,Relay,regular
+1223019579,access,no,regular
+1223019579,amenity,post_box,regular
+1223019579,operator,USPS,regular
+1229920703,highway,crossing,regular
+1234891779,atm,yes,regular
+1234891779,food,no,regular
+1234891779,name,The Avenue,regular
+1234891779,amenity,bar,regular
+1234891779,cuisine,bar,regular
+1234891779,smoking,outside,regular
+1234891779,website,https://www.facebook.com/pages/The-Avenue/111507118887698,regular
+1234891779,city,Oakland,addr
+1234891779,street,Telegraph Avenue,addr
+1234891779,postcode,94609,addr
+1234891779,internet_access,no,regular
+1234891779,outdoor_seating,no,regular
+1234891779,housenumber,4822,addr
+1236954880,building,entrance,regular
+1237053624,traffic_calming,hump,regular
+1237053740,traffic_calming,hump,regular
+1241673321,railway,crossing,regular
+1241673468,highway,crossing,regular
+1241673643,highway,crossing,regular
+1243846530,note,Relay,regular
+1243846530,access,private,regular
+1243846530,source,survey,regular
+1243846530,amenity,post_box,regular
+1243846530,operator,USPS,regular
+1243846530,quantity,1,regular
+1249019350,ref,13670,regular
+1249019350,name,Avenue B,regular
+1249019350,highway,bus_stop,regular
+1249019350,shelter,yes,regular
+1249019350,operator,Muni,regular
+1249336041,barrier,gate,regular
+1249383340,building,entrance,regular
+1249383340,street,Gateview Court,addr
+1249383340,housenumber,1248D/1395D,addr
+1249551231,building,entrance,regular
+1249551231,street,Mariner Drive,addr
+1249551231,housenumber,1208E,addr
+1256122502,name,Berlyn's Gourmet Eatery,regular
+1256122502,amenity,restaurant,regular
+1276281176,power,tower,regular
+1276817657,power,tower,regular
+1276870590,power,tower,regular
+1278485117,name,Battery McKinnon-Stotsenburg,regular
+1278485117,tourism,ruins,regular
+1278485117,historic,fort,regular
+1305397505,name,Red Door Pizza,regular
+1305397505,amenity,fast_food,regular
+1326951138,highway,stop,regular
+1337127856,emergency,fire_hydrant,regular
+1337779817,name,Self Defense Solutions,regular
+1337779817,phone,(408) 823-5217,regular
+1337779817,sport,martial_arts,regular
+1337779817,leisure,sports_centre,regular
+1337779817,city,Atherton,addr
+1337779817,street,El Camino Real,addr
+1337779817,postcode,94063,addr
+1337779817,housenumber,3279,addr
+1341810247,emergency,fire_hydrant,regular
+1341920939,highway,stop,regular
+1342778319,railway,level_crossing,regular
+1343999041,highway,stop,regular
+1350903688,emergency,fire_hydrant,regular
+1355479693,name,L&L Hawaiian Barbeque,regular
+1355479693,amenity,restaurant,regular
+1355479693,housenumber,324,addr
+1357115469,emergency,fire_hydrant,regular
+1357115469,type,pillar,fire_hydrant
+1368379081,emergency,fire_hydrant,regular
+1379220100,traffic_calming,hump,regular
+1388495280,emergency,fire_hydrant,regular
+1404858942,housenumber,955,addr
+1406358936,amenity,drinking_water,regular
+1409407378,ref,48,regular
+1409407378,name,Natoma & 8th,regular
+1409407378,source,osmsync:ccs,regular
+1409407378,amenity,car_sharing,regular
+1409407378,website,http://www.citycarshare.org/,regular
+1409407378,operator,City CarShare,regular
+1409407378,pkey,48,source
+1411718379,housenumber,470,addr
+1413948532,highway,turning_circle,regular
+1417640470,housenumber,1,addr
+1422284202,housenumber,345,addr
+1424194822,amenity,toilets,regular
+1424194822,disposal,pitlatrine,toilets
+1426583415,housenumber,89,addr
+1426620781,emergency,fire_hydrant,regular
+1437035470,street,George Avenue,addr
+1437035470,housenumber,4137,addr
+1450145213,name,Pavilion by the Bay Building 227,regular
+1450145213,building,yes,regular
+1450145213,street,Avenue of the Palms,addr
+1450145213,housenumber,291,addr
+1454232936,amenity,cafe,regular
+1454232936,cuisine,juice,regular
+1454232936,name,Juice Appeal,regular
+1454232936,opening_hours,Mo-Fr 08:00-18:00; Sa 10:00-18:00; Su 11:00-17:00,regular
+1456490648,emergency,fire_hydrant,regular
+1492707647,name,Walgreens,regular
+1492707647,amenity,post_box,regular
+1492707647,operator,USPS,regular
+1492707647,street,Decoto Road,addr
+1492707647,postcode,94555,addr
+1492707647,housenumber,3860,addr
+1492707647,collection_times,Mo-Fr 13:00; Sa 15:00,regular
+1496789211,housenumber,1295,addr
+1509243532,street,14th Street,addr
+1509243532,housenumber,781;783;785,addr
+1513379831,street,Walter Street,addr
+1513379831,levels,3,building
+1513379831,housenumber,96;94;92,addr
+1513379831,material,wood,building
+1561626535,natural,tree,regular
+1564279909,cable_car,let_go,regular
+1578907795,colour,yellow,regular
+1578907795,highway,crossing,regular
+1578907795,crossing,traffic_signals,regular
+1578907795,crossing_ref,zebra,regular
+1580633320,fee,Bank of the West,regular
+1580633320,amenity,atm,regular
+1583149656,crossing,uncontrolled,regular
+1583149656,highway,crossing,regular
+1601847798,image,https://lh5.googleusercontent.com/-yVLr3EOjXrE/TxxsQchXP7I/AAAAAAAAAZU/VnpMus0ZiIc/s640/IMG_20120119_172715.jpg,regular
+1601847798,amenity,drinking_water,regular
+1601847798,wheelchair,yes,regular
+1601847798,description,Decorative custom fountain on Kaiser Rooftop Garden,regular
+1601847798,stateofrepair,broken,regular
+1622598116,crossing,no,regular
+1630431921,name,Radio Shack,regular
+1630431921,shop,electronics,regular
+1630431921,wheelchair,yes,regular
+1649194490,housenumber,1341-43,addr
+1649224025,housenumber,1330-28,addr
+1654054220,name,Shell,regular
+1654054220,amenity,fuel,regular
+1655227118,highway,traffic_signals,regular
+1658396181,man_made,water_tank,regular
+1659965189,railway,level_crossing,regular
+1659965189,bell,yes,crossing
+1659965189,light,yes,crossing
+1669545490,name,Dress Barn,regular
+1669545490,shop,clothes,regular
+1669545490,phone,(650) 599-9180,regular
+1669545490,source,"City of Redwood City, CA 1013",regular
+1669545490,city,Redwood City,addr
+1669545490,street,El Camino Real,addr
+1669545490,postcode,94063,addr
+1669545490,housenumber,1035,addr
+1669545490,addr_id,6581,redwood_city_ca
+1672899481,name,Rotunda Plaza Cafe,regular
+1672899481,source,Bing,regular
+1672899481,amenity,cafe,regular
+1672899481,wheelchair,yes,regular
+1684183294,name,Los Temos Taqueria,regular
+1684183294,phone,(650) 780-0979,regular
+1684183294,source,"City of Redwood City, CA 1013",regular
+1684183294,amenity,restaurant,regular
+1684183294,cuisine,mexican,regular
+1684183294,city,Redwood City,addr
+1684183294,street,El Camino Real,addr
+1684183294,postcode,94063,addr
+1684183294,housenumber,1714,addr
+1684183294,addr_id,15775,redwood_city_ca
+1685260101,highway,traffic_signals,regular
+1698443888,source,Bing,regular
+1698443888,leisure,slipway,regular
+1707875139,railway,level_crossing,regular
+1707875294,highway,crossing,regular
+1713269606,name,Bernie's,regular
+1713269606,amenity,cafe,regular
+1718639894,amenity,waste_basket,regular
+1723738865,highway,traffic_signals,regular
+1723738865,turn_restrictions,yes,regular
+1727208881,note,The free ride downtown trolley,regular
+1727208881,highway,bus_stop,regular
+1727208881,shelter,no,regular
+1729170122,name,Mahrz,regular
+1729170122,shop,beauty,regular
+1729170122,phone,(650) 261-9700,regular
+1729170122,source,"City of Redwood City, CA 1013",regular
+1729170122,website,http://www.mahrz.com,regular
+1729170122,city,Redwood City,addr
+1729170122,street,Broadway,addr
+1729170122,postcode,94063,addr
+1729170122,housenumber,2361,addr
+1729170122,addr_id,2554,redwood_city_ca
+1734830365,name,Belle Spa,regular
+1734830365,shop,beauty,regular
+1734830365,phone,(650) 298-8109,regular
+1734830365,source,"City of Redwood City, CA 1013",regular
+1734830365,city,Redwood City,addr
+1734830365,street,Broadway,addr
+1734830365,postcode,94063,addr
+1734830365,housenumber,2611,addr
+1734830365,addr_id,2496,redwood_city_ca
+1735747581,historic,monument,regular
+1762740594,highway,crossing,regular
+1762740594,crossing,uncontrolled,regular
+1793826662,maxspeed,30 mph,regular
+1793826662,traffic_sign,maxspeed,regular
+1815368872,highway,stop,regular
+1819811597,name,Rockit Room,regular
+1819811597,amenity,bar,regular
+1839282933,foot,yes,regular
+1839282933,barrier,gate,regular
+1840697756,name,Kippu,regular
+1840697756,amenity,restaurant,regular
+1844139439,source,data.sfgov.org,regular
+1844139820,source,data.sfgov.org,regular
+1873987000,historic,wreck,regular
+1873987000,type,wreck,seamark
+1880215032,name,Cups and Cakes Bakery,regular
+1880215032,shop,bakery,regular
+1880215032,website,http://cupsandcakesbakery.com,regular
+1880215032,street,9th Street,addr
+1880215032,bitcoin,yes,payment
+1880215032,housenumber,451,addr
+1894132466,amenity,toilets,regular
+1894132466,drinking_water,no,regular
+1894132466,disposal,pitlatrine,toilets
+1937152376,city,Berkeley,addr
+1937152376,street,Josephine Street,addr
+1937152376,housenumber,1608,addr
+1937730438,amenity,parking_entrance,regular
+1941701001,building,house,regular
+1941701001,city,Berkeley,addr
+1941701001,street,Josephine Street,addr
+1941701001,housenumber,1529,addr
+1942845593,city,Berkeley,addr
+1942845593,street,Milvia Street,addr
+1942845593,housenumber,1600,addr
+1945963853,barrier,bollard,regular
+1947418742,access,yes,regular
+1947418742,barrier,gate,regular
+1949607849,city,Berkeley,addr
+1949607849,street,Bonita Avenue,addr
+1949607849,housenumber,1537,addr
+1951389666,city,Berkeley,addr
+1951389666,street,Cedar Street,addr
+1951389666,housenumber,2034,addr
+1972382986,highway,stop,regular
+1974590927,highway,stop,regular
+1979537360,city,San Francisco,addr
+1979537360,country,US,addr
+1979537360,housenumber,200,addr
+1979537360,postcode,94107,addr
+1979537360,state,CA,addr
+1979537360,street,Townsend Street,addr
+1979537360,amenity,bank,regular
+1979537360,atm,yes,regular
+1979537360,drive_through,no,regular
+1979537360,name,Fremont Bank,regular
+1981999273,street,Lombard Street,addr
+1981999273,housenumber,101,addr
+1990692292,name,Home Service Market,regular
+1990692292,shop,convenience,regular
+1996007278,highway,crossing,regular
+1996736268,highway,crossing,regular
+1996736268,crossing,uncontrolled,regular
+2020982607,city,Berkeley,addr
+2020982607,street,Cedar Street,addr
+2020982607,housenumber,1805,addr
+2027231770,highway,stop,regular
+2050959891,highway,crossing,regular
+2050959992,amenity,drinking_water,regular
+2056716307,name,Rosabel Almendares,regular
+2056716307,city,San Francisco,addr
+2056716307,street,25th Street,addr
+2056716307,housenumber,3473,addr
+2062584904,bus,yes,regular
+2062584904,highway,bus_stop,regular
+2062584904,name,Bancroft Way & Telegraph Av,regular
+2062584904,operator,AC Transit,regular
+2062584904,public_transport,platform,regular
+2062584904,ref,56888,regular
+2062584904,shelter,yes,regular
+2062584904,wheelchair,no,toilets
+2062584904,wheelchair,yes,regular
+2070549320,city,Berkeley,addr
+2070549320,street,Grant Street,addr
+2070549320,housenumber,1807,addr
+2071005284,url,http://www.alsplacesf.com/,regular
+2071005284,name,Al's Place,regular
+2071005284,amenity,restaurant,regular
+2071005284,street,Valencia Street,addr
+2071005284,housenumber,1499,addr
+2071244855,railway,crossing,regular
+2071244855,crossing,traffic_signals,regular
+2072490283,highway,bus_stop,regular
+2074897257,bus,yes,regular
+2074897257,ref,52502,regular
+2074897257,name,Grizzly Peak Blvd & #1411,regular
+2074897257,highway,bus_stop,regular
+2074897257,operator,AC Transit,regular
+2074897257,public_transport,platform,regular
+2099750874,traffic_calming,hump,regular
+2104913089,name,"Hustler Club, Strip Club, Deja Vue Corp",regular
+2104913089,amenity,nightclub,regular
+2104913089,website,hustlerclubsf.com,regular
+2104913089,street,Kearny Street,addr
+2104913089,housenumber,1031,addr
+2113145751,lnam,fae70fb6,noaa
+2113145751,geohash,468427c46684,noaa
+2113145751,taghash,7ea8dbbb8b7dc3413be5e473d13e0643ab6d5ff0,noaa
+2113145751,name,C,seamark
+2113145751,type,buoy_special_purpose,seamark
+2113145751,status,private,seamark
+2113145751,buoy_special_purpose,can,seamark
+2113145751,buoy_special_purpose,yellow,seamark
+2131610339,emergency,fire_hydrant,regular
+2131610339,type,pillar,fire_hydrant
+2131610339,position,sidewalk,fire_hydrant
+2131729855,name,Kohl's,regular
+2131729855,shop,clothes,regular
+2131735926,name,Cold Stone Creamery,regular
+2131735926,amenity,fast_food,regular
+2131735926,cuisine,ice_cream,regular
+2131764351,name,Cheesecake Factory,regular
+2131764351,amenity,restaurant,regular
+2131764351,cuisine,american,regular
+2149861614,name,BigLots,regular
+2149861614,shop,department_store,regular
+2149861614,phone,(650) 568-0116,regular
+2149861614,website,http://www.biglots.com,regular
+2149861614,city,Redwood City,addr
+2149861614,street,Broadway,addr
+2149861614,postcode,94063,addr
+2149861614,housenumber,1525,addr
+2156214835,ticker,no,regular
+2156214835,highway,bus_stop,regular
+2156214835,shelter,no,regular
+2167144978,name,La Folie,regular
+2167144978,amenity,restaurant,regular
+2167144978,cuisine,"French,_High_End",regular
+2167144978,website,http://www.lafolie.com/,regular
+2167562336,city,San Francisco,addr
+2167562336,housenumber,2127,addr
+2167562336,postcode,94109,addr
+2167562336,state,CA,addr
+2167562336,street,Polk Street,addr
+2167562336,amenity,restaurant,regular
+2167562336,cuisine,indian,regular
+2167562336,name,dakshin,regular
+2167562336,website,http://www.dakshin.restaurant/,regular
+2174314527,name,Lindgren's Coffee and Cafe,regular
+2174314527,wifi,free,regular
+2174314527,amenity,cafe,regular
+2174314527,cuisine,coffee_shop,regular
+2174314527,city,Berkeley,addr
+2174314527,street,Dwight Way,addr
+2174314527,postcode,94704,addr
+2174314527,housenumber,2120,addr
+2184658405,bus,yes,regular
+2184658405,bench,no,regular
+2184658405,highway,bus_stop,regular
+2184658405,shelter,no,regular
+2184658405,operator,ac transit,regular
+2184658405,public_transport,platform,regular
+2195108768,emergency,phone,regular
+2202857972,traffic_calming,hump,regular
+2202868566,traffic_calming,hump,regular
+2210925058,name,Than's Cleaners,regular
+2210925058,shop,dry_cleaning,regular
+2210925058,phone,+1 (415) 682-8336,regular
+2210925058,street,Taraval Street,addr
+2210925058,postcode,94116,addr
+2210925058,housenumber,3614A,addr
+2215072751,highway,stop,regular
+2240045627,highway,stop,regular
+2248278382,name,The Sandwich Place,regular
+2248278382,source,(415) 431-3811,regular
+2248278382,amenity,restaurant,regular
+2248278382,cuisine,sandwich,regular
+2248278382,street,Mission St,addr
+2248278382,postcode,94110,addr
+2248278382,housenumber,2029,addr
+2267669618,highway,stop,regular
+2276470545,highway,stop,regular
+2304475040,highway,crossing,regular
+2304475040,crossing,traffic_signals,regular
+2311956675,name,Beach Burrito,regular
+2311956675,amenity,restaurant,regular
+2311956675,opening_hours,Mo-Fr 11:00-21:00; Sa 10:00-21:00; Su 10:00-20:00,regular
+2318821830,name,Wells Fargo,regular
+2318821830,phone,+1 (415) 621-0122,regular
+2318821830,amenity,bank,regular
+2318821830,website,http://www.wellsfargo.com,regular
+2318821830,street,Castro Street,addr
+2318821830,postcode,94114,addr
+2318821830,housenumber,557,addr
+2321299174,name,Bryan Roberts Salon,regular
+2321299174,shop,hairdresser,regular
+2321299174,phone,+1 (415) 626-7700,regular
+2321299174,website,http://www.bryanrobertssalon.com,regular
+2321299174,street,Castro Street,addr
+2321299174,postcode,94114,addr
+2321299174,housenumber,561,addr
+2329540051,highway,crossing,regular
+2329540051,crossing,uncontrolled,regular
+2340996072,name,Urban Connection 2,regular
+2340996072,shop,clothes,regular
+2340996072,city,San Francisco,addr
+2340996072,street,Jefferson Street,addr
+2351681828,source,wetap.org,regular
+2351681828,amenity,drinking_water,regular
+2351681828,description,Beach Hut,regular
+2351681828,status,working,wetap
+2351681828,statusnote,Sweet. Stainless,wetap
+2365845687,name,Wines of California Wine Bar,regular
+2365845687,amenity,bar,regular
+2365845687,cuisine,wine,regular
+2370178932,barrier,gate,regular
+2376640022,street,Church Street,addr
+2376640022,housenumber,1097,addr
+2381537404,power,pole,regular
+2391070504,bottle,no,regular
+2391070504,amenity,drinking_water,regular
+2396859189,city,Palo Alto,addr
+2396859189,street,University Avenue,addr
+2396859189,housenumber,846,addr
+2470625247,source,"City of Redwood City, CA 1013",regular
+2470625247,city,Redwood City,addr
+2470625247,street,10th Avenue,addr
+2470625247,housenumber,1077,addr
+2470625247,addr_id,2860,redwood_city_ca
+2470625459,source,"City of Redwood City, CA 1013",regular
+2470625459,city,Redwood City,addr
+2470625459,street,Michael Drive,addr
+2470625459,housenumber,3427,addr
+2470625459,addr_id,3175,redwood_city_ca
+2470625622,source,"City of Redwood City, CA 1013",regular
+2470625622,city,Redwood City,addr
+2470625622,street,7th Avenue,addr
+2470625622,housenumber,921,addr
+2470625622,addr_id,5805,redwood_city_ca
+2472221204,source,"City of Redwood City, CA 1013",regular
+2472221204,city,Redwood City,addr
+2472221204,street,Arguello Street,addr
+2472221204,housenumber,1225,addr
+2472221204,addr_id,5055,redwood_city_ca
+2472221309,source,"City of Redwood City, CA 1013",regular
+2472221309,city,Redwood City,addr
+2472221309,street,Alden Street,addr
+2472221309,housenumber,447,addr
+2472221309,addr_id,20254,redwood_city_ca
+2475990493,name,Mephisto,regular
+2475990493,shop,shoes,regular
+2475990493,city,Berkeley,addr
+2475990493,street,4th Street,addr
+2475990493,housenumber,1799 C,addr
+2477163304,highway,stop,regular
+2479620510,source,"City of Redwood City, CA 1013",regular
+2479620510,city,Redwood City,addr
+2479620510,street,Main Street,addr
+2479620510,housenumber,2013,addr
+2479620510,addr_id,20204,redwood_city_ca
+2479620644,source,"City of Redwood City, CA 1013",regular
+2479620644,city,Redwood City,addr
+2479620644,street,Heller Street,addr
+2479620644,housenumber,555,addr
+2479620644,addr_id,16875,redwood_city_ca
+2481417731,source,"City of Redwood City, CA 1013",regular
+2481417731,city,Redwood City,addr
+2481417731,street,Hopkins Avenue,addr
+2481417731,housenumber,1024,addr
+2481417731,addr_id,3332,redwood_city_ca
+2481418054,source,"City of Redwood City, CA 1013",regular
+2481418054,city,Redwood City,addr
+2481418054,street,Roosevelt Avenue,addr
+2481418054,housenumber,1908,addr
+2481418054,addr_id,11083,redwood_city_ca
+2481418604,source,"City of Redwood City, CA 1013",regular
+2481418604,city,Redwood City,addr
+2481418604,street,Fulton Street,addr
+2481418604,housenumber,300,addr
+2481418604,addr_id,9451,redwood_city_ca
+2481418838,name,7-Eleven,regular
+2481418838,shop,convenience,regular
+2481418838,source,"City of Redwood City, CA 1013",regular
+2481418838,city,Redwood City,addr
+2481418838,street,El Camino Real,addr
+2481418838,housenumber,400,addr
+2481418838,addr_id,5062,redwood_city_ca
+2481419244,source,"City of Redwood City, CA 1013",regular
+2481419244,city,Redwood City,addr
+2481419244,street,Upland Road,addr
+2481419244,housenumber,614,addr
+2481419244,addr_id,4717,redwood_city_ca
+2481419385,source,"City of Redwood City, CA 1013",regular
+2481419385,city,Redwood City,addr
+2481419385,street,Upland Road,addr
+2481419385,housenumber,822,addr
+2481419385,addr_id,6447,redwood_city_ca
+2481552478,highway,stop,regular
+2482675928,name,Dark Garden,regular
+2482675928,shop,boutique,regular
+2483021697,source,"City of Redwood City, CA 1013",regular
+2483021697,city,Redwood City,addr
+2483021697,street,Saint Francis Street,addr
+2483021697,housenumber,1122,addr
+2483021697,addr_id,10669,redwood_city_ca
+2483021829,source,"City of Redwood City, CA 1013",regular
+2483021829,city,Redwood City,addr
+2483021829,street,Ruby Street,addr
+2483021829,housenumber,1181,addr
+2483021829,addr_id,8482,redwood_city_ca
+2483021929,source,"City of Redwood City, CA 1013",regular
+2483021929,city,Redwood City,addr
+2483021929,street,Reese Street,addr
+2483021929,housenumber,1277,addr
+2483021929,addr_id,14613,redwood_city_ca
+2483022078,source,"City of Redwood City, CA 1013",regular
+2483022078,city,Redwood City,addr
+2483022078,street,Valota Road,addr
+2483022078,housenumber,1411,addr
+2483022078,addr_id,5141,redwood_city_ca
+2483022395,source,"City of Redwood City, CA 1013",regular
+2483022395,city,Redwood City,addr
+2483022395,street,Kentfield Avenue,addr
+2483022395,housenumber,1510,addr
+2483022395,addr_id,7085,redwood_city_ca
+2483022655,source,"City of Redwood City, CA 1013",regular
+2483022655,city,Redwood City,addr
+2483022655,street,Kentfield Avenue,addr
+2483022655,housenumber,1597-,addr
+2483022655,addr_id,136,redwood_city_ca
+2483023363,source,"City of Redwood City, CA 1013",regular
+2483023363,city,Redwood City,addr
+2483023363,street,Oxford Street,addr
+2483023363,housenumber,1657,addr
+2483023363,addr_id,8054,redwood_city_ca
+2483023880,source,"City of Redwood City, CA 1013",regular
+2483023880,city,Redwood City,addr
+2483023880,street,Woodside Road,addr
+2483023880,housenumber,1878,addr
+2483023880,addr_id,5490,redwood_city_ca
+2483024416,source,"City of Redwood City, CA 1013",regular
+2483024416,city,Redwood City,addr
+2483024416,street,Wheeler Avenue,addr
+2483024416,housenumber,285,addr
+2483024416,addr_id,5338,redwood_city_ca
+2483024804,source,"City of Redwood City, CA 1013",regular
+2483024804,city,Redwood City,addr
+2483024804,street,Jefferson Court,addr
+2483024804,housenumber,3723,addr
+2483024804,addr_id,791,redwood_city_ca
+2483025437,source,"City of Redwood City, CA 1013",regular
+2483025437,city,Redwood City,addr
+2483025437,street,Oak Avenue,addr
+2483025437,housenumber,56A,addr
+2483025437,addr_id,15785,redwood_city_ca
+2483026131,source,"City of Redwood City, CA 1013",regular
+2483026131,city,Redwood City,addr
+2483026131,street,Roosevelt Avenue,addr
+2483026131,housenumber,767,addr
+2483026131,addr_id,10034,redwood_city_ca
+2483802314,source,"City of Redwood City, CA 1013",regular
+2483802314,city,Redwood City,addr
+2483802314,street,Main Street,addr
+2483802314,housenumber,1202,addr
+2483802314,addr_id,16907,redwood_city_ca
+2487652502,name,Safeway,regular
+2487652502,shop,supermarket,regular
+2487652502,website,http://local.safeway.com/ca/oakland-2870.html,regular
+2487652502,city,Oakland,addr
+2487652502,wheelchair,yes,regular
+2487652502,street,College Avenue,addr
+2487652502,postcode,94618,addr
+2487652502,opening_hours,24/7,regular
+2487652502,housenumber,6310,addr
+2583157457,name,Beyond Beads,regular
+2583157457,shop,jewelry,regular
+2583157457,city,San Francisco,addr
+2583157457,street,Howard Street,addr
+2583157457,date,2013-12-16,survey
+2583157457,country,US,addr
+2583157457,postcode,94103,addr
+2583157457,housenumber,1251,addr
+2588364182,ref,4,regular
+2588364182,name,Gate 4,regular
+2588364182,aeroway,gate,regular
+2611093482,name,The UPS Store,regular
+2611093482,amenity,post_office,regular
+2611093482,city,Oakland,addr
+2611093482,street,Grand Avenue,addr
+2611093482,postcode,94610,addr
+2611093482,opening_hours,"M-F: 9am-7pm, Sat: 9am-5pm, Sun: closed",regular
+2611093482,housenumber,360,addr
+2615855061,highway,stop,regular
+2621689440,railway,level_crossing,regular
+2628201863,name,Gitane,regular
+2628201863,shop,clothes,regular
+2628201863,source,photograph,regular
+2628201863,street,Santa Cruz Avenue,addr
+2628201863,housenumber,859,addr
+2630772943,name,Starbucks,regular
+2630772943,phone,1-510-337-1091,regular
+2630772943,amenity,cafe,regular
+2630772943,cuisine,coffee_shop,regular
+2630772943,city,Alameda,addr
+2630772943,street,Blanding Avenue,addr
+2630772943,postcode,94501,addr
+2630772943,internet_access,yes,regular
+2630772943,housenumber,2671D,addr
+2631477523,city,San Francisco,addr
+2631477523,street,Sanchez Street,addr
+2631477523,housenumber,1502,addr
+2656447336,city,San Francisco,addr
+2656447336,street,Jersey Street,addr
+2656447336,housenumber,90,addr
+2656801380,level,0,regular
+2656801380,city,San Francisco,addr
+2656801380,street,24th Street,addr
+2656801380,housenumber,3632,addr
+2664379653,city,San Francisco,addr
+2664379653,street,25th Street,addr
+2664379653,housenumber,3629,addr
+2668905620,source,photograph,regular
+2668905620,emergency,fire_hydrant,regular
+2671855683,city,San Francisco,addr
+2671855683,street,Clipper Street,addr
+2671855683,housenumber,158,addr
+2674442186,city,San Francisco,addr
+2674442186,street,Guerrero Street,addr
+2674442186,housenumber,1241,addr
+2676317044,source,photograph,regular
+2676317044,housenumber,349,addr
+2678864974,source,photograph,regular
+2678864974,maxspeed,25 mph,regular
+2678864974,traffic_sign,maxspeed,regular
+2686015599,source,photograph,regular
+2686015599,housenumber,433,addr
+2686015789,source,photograph,regular
+2686015789,emergency,fire_hydrant,regular
+2687059229,source,photograph,regular
+2687059229,emergency,fire_hydrant,regular
+2688076476,source,photograph,regular
+2688076476,housenumber,602,addr
+2688838170,name,Lot 68 Lounge,regular
+2688838170,amenity,bar,regular
+2698361554,source,photograph,regular
+2698361554,housenumber,784,addr
+2698388569,source,photograph,regular
+2698388569,housenumber,23,addr
+2702780066,city,San Francisco,addr
+2702780066,street,Church Street,addr
+2702780066,housenumber,1409,addr
+2705714001,highway,crossing,regular
+2705714001,crossing,traffic_signals,regular
+2710173660,city,San Francisco,addr
+2710173660,street,24th Street,addr
+2710173660,housenumber,3543,addr
+2713443579,smoking,dedicated,regular
+2714942370,amenity,smoking_area,regular
+2725422526,name,Brad's Donut Kitchen,regular
+2725422526,source,photograph,regular
+2725422526,amenity,restaurant,regular
+2725422526,cuisine,donut,regular
+2725422526,housenumber,34390,addr
+2727635811,source,photograph,regular
+2727635811,emergency,fire_hydrant,regular
+2735587759,name,District,regular
+2735587759,amenity,restaurant,regular
+2735587759,drive_in,no,regular
+2735587759,city,Oakland,addr
+2735587759,wheelchair,yes,regular
+2735587759,street,Washington Street,addr
+2735587759,outdoor_seating,yes,regular
+2735587759,housenumber,827,addr
+2794903292,highway,stop,regular
+2802098248,city,Hayward,addr
+2802098248,street,Stryker Street,addr
+2802098248,housenumber,26190,addr
+2835429898,natural,tree,regular
+2835429898,species,Platanus × acerifolia,regular
+2835429898,en,London Plane,species
+2839029257,highway,crossing,regular
+2839029257,crossing,uncontrolled,regular
+2839116184,highway,crossing,regular
+2839116184,crossing,uncontrolled,regular
+2844200878,city,San Francisco,addr
+2844200878,street,Sanchez Street,addr
+2844200878,housenumber,1488,addr
+2924846172,city,San Francisco,addr
+2924846172,street,Sanchez Street,addr
+2924846172,housenumber,1715,addr
+2929520808,city,San Francisco,addr
+2929520808,street,Sanchez Street,addr
+2929520808,housenumber,1723,addr
+2963986094,bottle,no,regular
+2963986094,amenity,drinking_water,regular
+2963986094,status,working,wetap
+2975978388,name,Nomad Rugs,regular
+2975978388,shop,carpet,regular
+2975978388,city,San Francisco,addr
+2975978388,street,24th Street,addr
+2975978388,housenumber,3775,addr
+2984815242,brand,Dero,regular
+2984815242,amenity,bicycle_repair_station,regular
+2984815242,operator,City of Albany,regular
+2984815242,lastcheck,2016-01-15,regular
+2984815242,note,"Tools stolen, pump vandalized.",lastcheck
+2984815242,status,broken,lastcheck
+2984815242,bicycle,yes,service
+2984815242,bicycle,no,service
+2989648458,name,Verizon Wireless,regular
+2989648458,shop,mobile_phone,regular
+3049588946,amenity,toilets,regular
+3069624946,power,tower,regular
+3095079844,barrier,block,regular
+3095080344,highway,stop,regular
+3096916621,highway,stop,regular
+3096921621,highway,stop,regular
+3100975783,railway,level_crossing,regular
+3114151260,highway,trailhead,regular
+3123445263,highway,stop,regular
+3124686283,highway,stop,regular
+3125358050,highway,crossing,regular
+3125358050,crossing,traffic_signals,regular
+3126825726,traffic_calming,hump,regular
+3127138351,traffic_calming,hump,regular
+3131310926,city,San Francisco,addr
+3131310926,street,27th Street,addr
+3131310926,housenumber,342,addr
+3134088019,city,Oakland,addr
+3134088019,street,Orange Street,addr
+3134088019,postcode,94610,addr
+3134088019,housenumber,202,addr
+3134706401,amenity,bicycle_parking,regular
+3149968248,highway,traffic_signals,regular
+3152042032,traffic_calming,hump,regular
+3163754590,railway,level_crossing,regular
+3166978497,name,Emilia's Pizzeria,regular
+3166978497,amenity,restaurant,regular
+3166978497,cuisine,pizza,regular
+3171430365,ele,1,regular
+3171430365,amenity,bench,regular
+3171430365,backrest,no,regular
+3184077145,name,Templo de la Fe,regular
+3184077145,amenity,place_of_worship,regular
+3184077145,religion,christian,regular
+3184077145,denomination,assemblies_of_god,regular
+3187505320,city,Richmond,addr
+3187505320,street,Virginia Avenue,addr
+3187505320,housenumber,1221,addr
+3197216275,city,Richmond,addr
+3197216275,street,Macdonald Avenue,addr
+3197216275,housenumber,800,addr
+3204993510,city,San Francisco,addr
+3204993510,housenumber,1740,addr
+3204993510,street,Church Street,addr
+3204993510,amenity,restaurant,disused
+3204993510,cuisine,japanese,disused
+3204993510,name,Tataki South,regular
+3209789136,city,Richmond,addr
+3209789136,street,South 17th Street,addr
+3209789136,housenumber,410,addr
+3231086989,date,2014-12-06,survey
+3231086989,housenumber,1384,addr
+3236440968,natural,tree,regular
+3240581921,type,beacon_lateral,seamark
+3240581921,beacon_lateral,pile,seamark
+3240581921,beacon_lateral,green,seamark
+3240581921,beacon_lateral,port,seamark
+3243531316,city,Richmond,addr
+3243531316,street,Potrero Avenue,addr
+3243531316,housenumber,2111,addr
+3257706567,designer,M. Paul Friedberg,regular
+3257706567,attraction,slide,regular
+3257706567,description,25 foot tall dual tube slide,regular
+3258801614,city,Berkeley,addr
+3258801614,street,College Avenue,addr
+3258801614,date,2014-12-22,survey
+3258801614,housenumber,2536,addr
+3279555016,ref,327,regular
+3279555016,name,Henry & Sanchez (on-street),regular
+3279555016,source,osmsync:ccs,regular
+3279555016,amenity,car_sharing,regular
+3279555016,website,http://www.citycarshare.org/,regular
+3279555016,operator,City CarShare,regular
+3279555016,pkey,327,source
+3286480216,city,San Francisco,addr
+3286480216,street,27th Street,addr
+3286480216,housenumber,335,addr
+3298978677,city,San Francisco,addr
+3298978677,street,Duncan Street,addr
+3298978677,housenumber,320,addr
+3325680094,city,San Francisco,addr
+3325680094,street,Valley Street,addr
+3325680094,housenumber,239,addr
+3328730554,city,San Francisco,addr
+3328730554,street,29th Street,addr
+3328730554,housenumber,386A,addr
+3381660975,name,Coastside Critters,regular
+3381660975,shop,pet,regular
+3381660975,phone,+1 650 355 6177,regular
+3381660975,city,Pacifica,addr
+3381660975,state,CA,addr
+3381660975,street,Manor Plaza,addr
+3381660975,postcode,94044,addr
+3381660975,housenumber,454,addr
+3391510611,city,San Francisco,addr
+3391510611,street,29th Street,addr
+3391510611,housenumber,375,addr
+3392794296,railway,subway_entrance,regular
+3393083233,highway,crossing,regular
+3393083233,crossing,traffic_signals,regular
+3393392959,name,Parking Garage,regular
+3393392959,amenity,parking,regular
+3401354578,tourism,viewpoint,regular
+3423683736,city,San Francisco,addr
+3423683736,street,25th Street,addr
+3423683736,housenumber,3890,addr
+3438393663,name,Starbucks,regular
+3438393663,amenity,cafe,regular
+3449132829,taxon,Pittosporum tenuifolium,regular
+3449132829,common,Tawhiwhi,regular
+3449132829,height,20,regular
+3449132829,natural,tree,regular
+3449132829,Subclass,Broad-Leafed Evergreen,regular
+3449132829,Trunk_Diam,11,regular
+3455075355,name,Cafe du Soleil,regular
+3455075355,amenity,cafe,regular
+3455075355,city,San Francisco,addr
+3455075355,street,3rd Street,addr
+3455075355,housenumber,345,addr
+3458646195,crossing,uncontrolled,regular
+3458646195,highway,crossing,regular
+3472532046,amenity,bench,regular
+3476031988,city,San Francisco,addr
+3476031988,street,Fair Oaks Street,addr
+3476031988,housenumber,280,addr
+3485166593,city,San Francisco,addr
+3485166593,street,Fair Oaks Street,addr
+3485166593,housenumber,211,addr
+3498132683,taxon,Eucalyptus cornuta,regular
+3498132683,natural,tree,regular
+3498132683,leaf_cycle,evergreen,regular
+3498132683,en,Yate,species
+3498136494,taxon,Pittosporum undulatum,regular
+3498136494,natural,tree,regular
+3498136494,leaf_cycle,evergreen,regular
+3498136494,en,Victorian Box,species
+3498136994,taxon,Pittosporum undulatum,regular
+3498136994,natural,tree,regular
+3498136994,leaf_cycle,evergreen,regular
+3498136994,en,Victorian Box,species
+3498137094,taxon,Prunus serrulata 'Akebono',regular
+3498137094,natural,tree,regular
+3498137094,leaf_type,broadleaved,regular
+3498137094,leaf_cycle,deciduous,regular
+3498137094,en,Akebono Flowering Cherry,species
+3498137794,taxon,Maytenus boaria,regular
+3498137794,natural,tree,regular
+3498137794,leaf_type,broadleaved,regular
+3498137794,leaf_cycle,deciduous,regular
+3498137794,en,Mayten,species
+3498138894,taxon,Eucalyptus nicholii,regular
+3498138894,natural,tree,regular
+3498138894,leaf_cycle,evergreen,regular
+3498138894,en,Nichol's Peppermint Gum,species
+3498139594,taxon,Pinus radiata,regular
+3498139594,natural,tree,regular
+3498139594,leaf_type,needleleaved,regular
+3498139594,en,Monterey Pine,species
+3498140294,taxon,Pinus radiata,regular
+3498140294,natural,tree,regular
+3498140294,leaf_type,needleleaved,regular
+3498140294,en,Monterey Pine,species
+3498141195,taxon,Cyathea medullaris,regular
+3498141195,natural,tree,regular
+3498141195,en,Tree Fern,species
+3498142195,taxon,Pittosporum undulatum,regular
+3498142195,natural,tree,regular
+3498142195,leaf_cycle,evergreen,regular
+3498142195,en,Victorian Box,species
+3498142985,taxon,Pittosporum undulatum,regular
+3498142985,natural,tree,regular
+3498142985,leaf_cycle,evergreen,regular
+3498142985,en,Victorian Box,species
+3498144385,taxon,Pinus radiata,regular
+3498144385,natural,tree,regular
+3498144385,leaf_type,needleleaved,regular
+3498144385,en,Monterey Pine,species
+3498145285,taxon,Pittosporum tenuifolium,regular
+3498145285,natural,tree,regular
+3498145285,leaf_cycle,evergreen,regular
+3498145285,en,Tawhiwhi,species
+3498146085,taxon,Pinus radiata,regular
+3498146085,natural,tree,regular
+3498146085,leaf_type,needleleaved,regular
+3498146085,en,Monterey Pine,species
+3498146885,taxon,Prunus serrulata 'Akebono',regular
+3498146885,natural,tree,regular
+3498146885,leaf_type,broadleaved,regular
+3498146885,leaf_cycle,deciduous,regular
+3498146885,en,Akebono Flowering Cherry,species
+3498147685,taxon,Sequoia sempervirens,regular
+3498147685,natural,tree,regular
+3498147685,leaf_type,needleleaved,regular
+3498147685,en,Coastal Redwood,species
+3498148685,taxon,Pinus radiata,regular
+3498148685,natural,tree,regular
+3498148685,leaf_type,needleleaved,regular
+3498148685,en,Monterey Pine,species
+3498149185,taxon,Eucalyptus globulus,regular
+3498149185,natural,tree,regular
+3498149185,leaf_cycle,evergreen,regular
+3498149185,en,Blue Gum,species
+3498149885,taxon,Eucalyptus globulus,regular
+3498149885,natural,tree,regular
+3498149885,leaf_cycle,evergreen,regular
+3498149885,en,Blue Gum,species
+3498150785,taxon,Cupressus macrocarpa,regular
+3498150785,natural,tree,regular
+3498150785,leaf_type,needleleaved,regular
+3498150785,en,Monterey Cypress,species
+3498151485,taxon,Pittosporum crassifolium,regular
+3498151485,natural,tree,regular
+3498151485,leaf_cycle,evergreen,regular
+3498151485,en,Karo,species
+3498152185,taxon,Pinus radiata,regular
+3498152185,natural,tree,regular
+3498152185,leaf_type,needleleaved,regular
+3498152185,en,Monterey Pine,species
+3498152985,taxon,Myoporum laetum,regular
+3498152985,natural,tree,regular
+3498152985,leaf_cycle,evergreen,regular
+3498152985,en,Myoporum,species
+3498153385,taxon,Prunus cerasifera,regular
+3498153385,natural,tree,regular
+3498153385,leaf_type,broadleaved,regular
+3498153385,leaf_cycle,deciduous,regular
+3498153385,en,Purple Leaf Plum,species
+3498154640,taxon,Eucalyptus globulus,regular
+3498154640,natural,tree,regular
+3498154640,leaf_cycle,evergreen,regular
+3498154640,en,Blue Gum,species
+3498155640,taxon,Fraxinus uhdei,regular
+3498155640,natural,tree,regular
+3498155640,leaf_type,broadleaved,regular
+3498155640,leaf_cycle,deciduous,regular
+3498155640,en,Evergreen Ash,species
+3498156240,taxon,Cupressus leylandii,regular
+3498156240,natural,tree,regular
+3498156240,leaf_type,needleleaved,regular
+3498156240,en,Leyland Cypress,species
+3498157435,taxon,Cupressus macrocarpa,regular
+3498157435,natural,tree,regular
+3498157435,leaf_type,needleleaved,regular
+3498157435,en,Monterey Cypress,species
+3498158235,taxon,Podocarpus No Data,regular
+3498158235,natural,tree,regular
+3509468129,amenity,bicycle_rental,regular
+3509468129,website,http://www.watersideworkshops.org/,regular
+3516376983,name,Fix that Mac,regular
+3516376983,shop,computer,regular
+3516376983,repair,yes,regular
+3516376983,website,http://www.fixthatmac.com/,regular
+3516376983,street,Oxford Street,addr
+3516376983,postcode,94704,addr
+3516376983,housenumber,2140,addr
+3522504928,amenity,parking,regular
+3524374237,bench,no,regular
+3524374237,covered,no,regular
+3524374237,highway,bus_stop,regular
+3524374237,network,"1, 1AX",regular
+3524374237,operator,San Francisco Municipal Railway,regular
+3524374237,route_ref,1;1AX,regular
+3524374237,shelter,no,regular
+3524374237,website,http://www.sfmta.com/getting-around/transit/routes-stops/stops/3549,regular
+3542728903,name,Mary Zell Spellman,regular
+3542728903,office,estate_agent,regular
+3542728903,city,San Francisco,addr
+3542728903,state,CA,addr
+3542728903,street,West Portal Avenue,addr
+3542728903,country,US,addr
+3542728903,postcode,94127,addr
+3542728903,housenumber,318,addr
+3564869395,url,http://www.outerspatial.com/trailheads/20123,regular
+3564869395,fixme,"There appears to be a social trail in the vicinity. Please confirm, and if present, change the tag to highway=social_path",regular
+3586387860,city,San Francisco,addr
+3586387860,street,Dolores Street,addr
+3586387860,housenumber,1560,addr
+3593734418,amenity,fire_station,regular
+3609418102,city,San Francisco,addr
+3609418102,street,Day Street,addr
+3609418102,housenumber,178,addr
+3622460305,name,West Portal Oral Surgery,regular
+3622460305,amenity,dentist,regular
+3622460305,city,San Francisco,addr
+3622460305,state,CA,addr
+3622460305,street,West Portal Avenue,addr
+3622460305,country,US,addr
+3622460305,postcode,94127,addr
+3622460305,housenumber,99,addr
+3634748094,city,San Francisco,addr
+3634748094,state,CA,addr
+3634748094,street,Taraval Street,addr
+3634748094,country,US,addr
+3634748094,postcode,94116,addr
+3634748094,housenumber,321,addr
+3642090341,city,San Francisco,addr
+3642090341,housenumber,736,addr
+3642090341,postcode,94105,addr
+3642090341,state,CA,addr
+3642090341,street,Mission Street,addr
+3642090341,amenity,restaurant,regular
+3642090341,cuisine,Jewish,regular
+3642090341,name,Wise Sons,regular
+3644674379,name,Arlington Wine and Spirits,regular
+3644674379,shop,alcohol,regular
+3648549615,name,Quoc Long Jewlery,regular
+3648549615,shop,jewelry,regular
+3648549615,city,San Francisco,addr
+3648549615,state,CA,addr
+3648549615,street,Larkin Street,addr
+3648549615,postcode,94109,addr
+3648549615,housenumber,639,addr
+3657172994,city,San Francisco,addr
+3657172994,state,CA,addr
+3657172994,street,9th Avenue,addr
+3657172994,country,US,addr
+3657172994,postcode,94122,addr
+3657172994,housenumber,1384,addr
+3658311029,city,San Francisco,addr
+3658311029,state,CA,addr
+3658311029,street,Irving Street,addr
+3658311029,country,US,addr
+3658311029,postcode,94122,addr
+3658311029,housenumber,925,addr
+3661020180,city,San Francisco,addr
+3661020180,state,CA,addr
+3661020180,street,Sansome Street,addr
+3661020180,country,US,addr
+3661020180,postcode,94104,addr
+3661020180,housenumber,204,addr
+3664022050,city,San Francisco,addr
+3664022050,state,CA,addr
+3664022050,street,Lawton Street,addr
+3664022050,country,US,addr
+3664022050,postcode,94122,addr
+3664022050,housenumber,603,addr
+3667881127,name,One Stop Beauty Supply & Salon,regular
+3667881127,shop,beauty,regular
+3667881127,city,San Francisco,addr
+3667881127,state,CA,addr
+3667881127,street,Irving Street,addr
+3667881127,postcode,94122,addr
+3667881127,housenumber,605,addr
+3671194004,city,San Francisco,addr
+3671194004,state,CA,addr
+3671194004,street,12th Avenue,addr
+3671194004,country,US,addr
+3671194004,postcode,94122,addr
+3671194004,housenumber,1622,addr
+3671214408,city,San Francisco,addr
+3671214408,state,CA,addr
+3671214408,street,Judah Street,addr
+3671214408,country,US,addr
+3671214408,postcode,94122,addr
+3671214408,housenumber,219,addr
+3673409252,name,Philz Coffee,regular
+3673409252,amenity,cafe,regular
+3673409252,cuisine,coffee_shop,regular
+3673409252,internet_access,wlan,regular
+3674255649,city,San Francisco,addr
+3674255649,state,CA,addr
+3674255649,street,9th Avenue,addr
+3674255649,country,US,addr
+3674255649,postcode,94122,addr
+3674255649,housenumber,1245,addr
+3674278750,city,San Francisco,addr
+3674278750,state,CA,addr
+3674278750,street,7th Avenue,addr
+3674278750,country,US,addr
+3674278750,postcode,94122,addr
+3674278750,housenumber,1229,addr
+3676718601,city,San Francisco,addr
+3676718601,street,Dolores Street,addr
+3676718601,housenumber,1245,addr
+3677063174,city,San Francisco,addr
+3677063174,state,CA,addr
+3677063174,street,Funston Avenue,addr
+3677063174,country,US,addr
+3677063174,postcode,94122,addr
+3677063174,housenumber,1490,addr
+3678295360,foot,yes,regular
+3678295360,barrier,gate,regular
+3678295360,bicycle,yes,regular
+3679639718,city,San Francisco,addr
+3679639718,state,CA,addr
+3679639718,street,12th Avenue,addr
+3679639718,country,US,addr
+3679639718,postcode,94122,addr
+3679639718,housenumber,1459,addr
+3679678897,city,San Francisco,addr
+3679678897,state,CA,addr
+3679678897,street,10th Avenue,addr
+3679678897,country,US,addr
+3679678897,postcode,94122,addr
+3679678897,housenumber,1579,addr
+3682553089,railway,level_crossing,regular
+3682618185,railway,level_crossing,regular
+3685924341,city,San Francisco,addr
+3685924341,street,Dolores Street,addr
+3685924341,housenumber,1289,addr
+3687445769,highway,crossing,regular
+3687445769,crossing,uncontrolled,regular
+3688718098,city,San Francisco,addr
+3688718098,state,CA,addr
+3688718098,street,Funston Avenue,addr
+3688718098,country,US,addr
+3688718098,postcode,94122,addr
+3688718098,housenumber,1408,addr
+3692823559,city,San Francisco,addr
+3692823559,state,CA,addr
+3692823559,street,Geary Street,addr
+3692823559,country,US,addr
+3692823559,postcode,94109,addr
+3692823559,housenumber,701,addr
+3711286017,natural,tree,regular
+3720826044,natural,tree,regular
+3722344559,name,Foot Express,regular
+3722344559,shop,shoes,regular
+3741990097,highway,crossing,regular
+3788437457,city,San Francisco,addr
+3788437457,state,CA,addr
+3788437457,street,Carl Street,addr
+3788437457,country,US,addr
+3788437457,postcode,94117,addr
+3788437457,housenumber,304,addr
+3790822862,name,Mane Attraction,regular
+3790822862,shop,hairdresser,regular
+3790822862,city,San Francisco,addr
+3790822862,state,CA,addr
+3790822862,street,Carl Street,addr
+3790822862,postcode,94117,addr
+3790822862,housenumber,103,addr
+3790899077,city,San Francisco,addr
+3790899077,state,CA,addr
+3790899077,street,Willard Street,addr
+3790899077,country,US,addr
+3790899077,postcode,94117,addr
+3790899077,housenumber,1334,addr
+3793691057,city,San Francisco,addr
+3793691057,state,CA,addr
+3793691057,street,3rd Avenue,addr
+3793691057,country,US,addr
+3793691057,postcode,94122,addr
+3793691057,housenumber,1241,addr
+3833899210,amenity,bench,regular
+3840704467,highway,traffic_signals,regular
+3843970778,name,Mori Point,regular
+3853311608,street,14th Street,addr
+3853311608,housenumber,726,addr
+3897575849,city,San Francisco,addr
+3897575849,state,CA,addr
+3897575849,street,Carl Street,addr
+3897575849,country,US,addr
+3897575849,postcode,94117,addr
+3897575849,housenumber,434,addr
+3897587792,city,San Francisco,addr
+3897587792,state,CA,addr
+3897587792,street,Carl Street,addr
+3897587792,country,US,addr
+3897587792,postcode,94117,addr
+3897587792,housenumber,402b,addr
+3899202704,city,San Francisco,addr
+3899202704,state,CA,addr
+3899202704,street,3rd Avenue,addr
+3899202704,country,US,addr
+3899202704,postcode,94122,addr
+3899202704,housenumber,1253,addr
+3899224633,city,San Francisco,addr
+3899224633,state,CA,addr
+3899224633,street,Lincoln Way,addr
+3899224633,country,US,addr
+3899224633,postcode,94122,addr
+3899224633,housenumber,409,addr
+3921504082,amenity,bench,regular
+3926545214,name,bay city bike,regular
+3926545214,phone,+14153462453,regular
+3926545214,amenity,bicycle_rental,regular
+3926545214,website,http://baycitybike.com/,regular
+3928006151,name,Oakland Hot Plate,regular
+3956231980,natural,tree,regular
+3960449884,name,CCSF North Beach / Chinatown Bookstore,regular
+3960449884,shop,books,regular
+3960449884,operator,City College of San Francisco (CCSF),regular
+3962858908,amenity,parking_entrance,regular
+3965445112,name,"Harry K. Jeung, CPA",regular
+3965445112,level,9,regular
+3965445112,phone,(650) 343-3830,regular
+3965445112,suite,950,regular
+3965445112,website,https://harryjeungcpa.com/,regular
+3965445112,city,Burlingame,addr
+3965445112,state,CA,addr
+3965445112,street,Bayshore Highway,addr
+3965445112,postcode,94010,addr
+3965445112,housenumber,1350,addr
+3972323823,highway,stop,regular
+3983519211,fuel,charcoal,regular
+3983519211,amenity,bbq,regular
+3983519211,covered,no,regular
+3988389207,name,New Sang Chong Market,regular
+3988389207,shop,greengrocer,regular
+3989195990,name,Liege,regular
+3989195990,amenity,bar,regular
+3989381506,type,pile,seamark
+3989381706,type,pile,seamark
+3993039683,name,Designer Hair Salon,regular
+3993039683,shop,hairdresser,regular
+3993039683,city,San Francisco,addr
+3993039683,state,CA,addr
+3993039683,street,Irving Street,addr
+3993039683,country,US,addr
+3993039683,postcode,94122,addr
+3993039683,housenumber,2127,addr
+3999453486,name,KFC,regular
+3999453486,amenity,fast_food,regular
+4000111163,city,San Francisco,addr
+4000111163,state,CA,addr
+4000111163,street,3rd Avenue,addr
+4000111163,country,US,addr
+4000111163,postcode,94122,addr
+4000111163,housenumber,1287,addr
+4001958727,city,San Francisco,addr
+4001958727,state,CA,addr
+4001958727,street,Carl Street,addr
+4001958727,country,US,addr
+4001958727,postcode,94117,addr
+4001958727,housenumber,207,addr
+4003389391,city,San Francisco,addr
+4003389391,street,9th Street,addr
+4003389391,postcode,94103,addr
+4003389391,housenumber,223A,addr
+4006627914,leisure,picnic_table,regular
+4015186969,city,San Francisco,addr
+4015186969,state,CA,addr
+4015186969,street,Irving Street,addr
+4015186969,country,US,addr
+4015186969,postcode,94122,addr
+4015186969,housenumber,3923,addr
+4015701279,city,San Francisco,addr
+4015701279,state,CA,addr
+4015701279,street,34th Avenue,addr
+4015701279,country,US,addr
+4015701279,postcode,94122,addr
+4015701279,housenumber,1295,addr
+4015832240,name,Your Auto Center,regular
+4015832240,shop,car_repair,regular
+4016379793,crossing,traffic_signals,regular
+4016379793,highway,crossing,regular
+4017234695,atm,yes,regular
+4017234695,name,Bank of the Orient,regular
+4017234695,amenity,bank,regular
+4017234695,city,San Francisco,addr
+4017234695,state,CA,addr
+4017234695,street,Irving Street,addr
+4017234695,postcode,94122,addr
+4017234695,housenumber,2001,addr
+4018792789,name,Laundropalooza,regular
+4018792789,shop,laundry,regular
+4018792789,city,San Francisco,addr
+4018792789,state,CA,addr
+4018792789,street,Irving Street,addr
+4018792789,postcode,94122,addr
+4018792789,housenumber,2241,addr
+4018989416,amenity,bicycle_parking,regular
+4018989416,capacity,2,regular
+4023155498,crossing,uncontrolled,regular
+4023155498,highway,crossing,regular
+4030526411,amenity,bicycle_parking,regular
+4030526411,bicycle_parking,rack,regular
+4030863051,highway,crossing,regular
+4030863051,crossing,uncontrolled,regular
+4035940029,crossing,uncontrolled,regular
+4035940029,railway,crossing,regular
+4042907828,city,San Francisco,addr
+4042907828,state,CA,addr
+4042907828,street,34th Avenue,addr
+4042907828,country,US,addr
+4042907828,postcode,94121,addr
+4042907828,housenumber,485,addr
+4049345780,name,Olunds Domestic and Mercedes Benz Sales,regular
+4049345780,shop,car,regular
+4057348976,name,Sutton Cellars,regular
+4057348976,shop,wine,regular
+4057348976,street,22nd Street,addr
+4057348976,housenumber,601,addr
+4066106931,name,Little Caesars,regular
+4066106931,amenity,fast_food,regular
+4066106931,city,Oakland,addr
+4066106931,state,CA,addr
+4066106931,street,MacArthur Boulevard,addr
+4066106931,postcode,94602,addr
+4066106931,housenumber,2218,addr
+4069424396,city,San Francisco,addr
+4069424396,state,CA,addr
+4069424396,street,5th Avenue,addr
+4069424396,postcode,94122,addr
+4069424396,housenumber,1432,addr
+4069447496,city,San Francisco,addr
+4069447496,state,CA,addr
+4069447496,street,Taraval Street,addr
+4069447496,postcode,94116,addr
+4069447496,housenumber,812,addr
+4072704048,name,Carpeteria,regular
+4072704048,shop,rug,regular
+4077358635,name,Wen Sang Jade,regular
+4077358635,shop,yes,regular
+4087559494,noexit,yes,regular
+4096811900,amenity,bench,regular
+4098703828,amenity,waste_basket,regular
+4104010882,street,48th Avenue,addr
+4104010882,housenumber,1391,addr
+4106923139,name,T&T Cafe,regular
+4106923139,amenity,cafe,regular
+4115272413,fixme,Please change address for 3580 Terrace way to the new location north of Terrace Way (it is incorrectly showing now southwest of Terrace and Thompson),regular
+4115272413,city,Lafayette,addr
+4115272413,state,CA,addr
+4115272413,street,Terrace Way,addr
+4115272413,postcode,94549,addr
+4115272413,housenumber,3580,addr
+4124184019,name,Physics-Astronomy Library,regular
+4124184019,amenity,library,regular
+4147736330,highway,crossing,regular
+4147736330,crossing,traffic_signals,regular
+4177860948,natural,tree,regular
+4199758879,emergency,fire_hydrant,regular
+4204722104,crossing,uncontrolled,regular
+4204722104,highway,crossing,regular
+4204722304,crossing,zebra,regular
+4204722304,highway,crossing,regular
+4210484530,highway,crossing,regular
+4210484530,crossing,uncontrolled,regular
+4213378382,highway,crossing,regular
+4213378382,crossing,uncontrolled,regular
+4213511018,highway,crossing,regular
+4213511018,crossing,uncontrolled,regular
+4217112441,highway,crossing,regular
+4217112441,crossing,uncontrolled,regular
+4218827209,highway,crossing,regular
+4218827209,crossing,uncontrolled,regular
+4218967482,highway,crossing,regular
+4218967482,crossing,uncontrolled,regular
+4220113840,name,Cannon,regular
+4220113840,tourism,artwork,regular
+4220113840,artwork_type,installation,regular
+4220797235,name,Appaloosa,regular
+4220797235,shop,clothes,regular
+4225207010,highway,crossing,regular
+4225207010,crossing,uncontrolled,regular
+4226425332,highway,crossing,regular
+4226425332,crossing,uncontrolled,regular
+4226623515,highway,crossing,regular
+4226623515,crossing,uncontrolled,regular
+4226665497,highway,crossing,regular
+4226665497,crossing,uncontrolled,regular
+4227851389,highway,crossing,regular
+4227851389,crossing,uncontrolled,regular
+4228031735,highway,crossing,regular
+4228031735,crossing,traffic_signals,regular
+4233488269,highway,crossing,regular
+4233488269,crossing,uncontrolled,regular
+4233489869,highway,crossing,regular
+4233489869,crossing,island,regular
+4233843972,highway,crossing,regular
+4233843972,crossing,traffic_signals,regular
+4237304252,highway,crossing,regular
+4237304252,crossing,uncontrolled,regular
+4238459390,name,Eyes in Disguise,regular
+4238459390,shop,optician,regular
+4238459390,city,San Francisco,addr
+4238459390,state,CA,addr
+4238459390,street,Ocean Avenue,addr
+4238459390,postcode,94127,addr
+4238459390,housenumber,2532,addr
+4238979983,highway,crossing,regular
+4238979983,crossing,uncontrolled,regular
+4240959834,highway,crossing,regular
+4240959834,crossing,traffic_signals,regular
+4242028252,amenity,bicycle_parking,regular
+4242028252,capacity,8,regular
+4250075583,highway,crossing,regular
+4250075583,crossing,uncontrolled,regular
+4251743209,traffic_calming,hump,regular
+4259747291,name,Burger house,regular
+4259747291,amenity,restaurant,regular
+4259747291,street,Powell Street,addr
+4259747291,housenumber,237,addr
+4264245680,highway,crossing,regular
+4264245680,crossing,traffic_signals,regular
+4265656940,highway,crossing,regular
+4265656940,crossing,uncontrolled,regular
+4268723496,city,San Francisco,addr
+4268723496,state,CA,addr
+4268723496,street,Dore Street,addr
+4268723496,postcode,94103,addr
+4268723496,housenumber,212,addr
+4279441391,highway,crossing,regular
+4279441391,crossing,traffic_signals,regular
+4281738141,leisure,picnic_table,regular
+4283824369,highway,crossing,regular
+4283824369,crossing,uncontrolled,regular
+4291175220,city,San Francisco,addr
+4291175220,state,CA,addr
+4291175220,street,Lincoln Way,addr
+4291175220,country,US,addr
+4291175220,postcode,94122,addr
+4291175220,housenumber,2211,addr
+4292011801,city,San Francisco,addr
+4292011801,state,CA,addr
+4292011801,street,17th Street,addr
+4292011801,country,US,addr
+4292011801,postcode,94117,addr
+4292011801,housenumber,4860,addr
+4292149566,city,San Francisco,addr
+4292149566,state,CA,addr
+4292149566,street,Corbett Avenue,addr
+4292149566,country,US,addr
+4292149566,postcode,94114,addr
+4292149566,housenumber,249,addr
+4294455607,highway,crossing,regular
+4294455607,crossing,uncontrolled,regular
+4295406061,amenity,bench,regular
+4295406061,backrest,no,regular
+4302065375,traffic_calming,island,regular
+4306823843,crossing,traffic_signals,regular
+4306823843,highway,crossing,regular
+4306824143,crossing,traffic_signals,regular
+4306824143,highway,crossing,regular
+4313749602,natural,tree,regular
+4321321340,crossing,traffic_signals,regular
+4321321340,highway,crossing,regular
+4324593083,highway,crossing,regular
+4324593083,crossing,traffic_signals,regular
+4330828654,highway,crossing,regular
+4330828654,crossing,uncontrolled,regular
+4340565239,name,Azzure Salon,regular
+4340565239,shop,hairdresser,regular
+4340565239,city,Albany,addr
+4340565239,state,CA,addr
+4340565239,street,San Pablo Avenue,addr
+4340565239,postcode,94706,addr
+4340565239,opening_hours,"Mo,We-Sa 09:30-18:00",regular
+4340565239,housenumber,609,addr
+4349256198,street,Balboa Street,addr
+4349256198,housenumber,3732,addr
+4358129505,amenity,waste_basket,regular
+4359604632,tourism,picnic_site,regular
+4360897793,name,Librarian's Office,regular
+4360897793,office,yes,regular
+4385095910,highway,crossing,regular
+4385095910,crossing,traffic_signals,regular
+4385096110,highway,crossing,regular
+4385096110,crossing,uncontrolled,regular
+4385096310,highway,crossing,regular
+4385096310,crossing,traffic_signals,regular
+4393049912,leisure,playground,regular
+4396900189,city,San Francisco,addr
+4396900189,state,CA,addr
+4396900189,street,Natoma Street,addr
+4396900189,postcode,94103,addr
+4396900189,housenumber,759,addr
+4398743539,type,rock,seamark
+4398743539,rock,1.2,seamark
+4398743539,rock,least_known,seamark
+4398743539,rock,within,seamark
+4398743539,rock,submerged,seamark
+4400550834,street,Judah Street,addr
+4400550834,housenumber,3015,addr
+4402491121,highway,crossing,regular
+4402491121,crossing,traffic_signals,regular
+4406691928,railway,crossing,regular
+4406691928,crossing,traffic_signals,regular
+4406692028,railway,crossing,regular
+4407739107,railway,level_crossing,regular
+4422442596,name,Iron Triangle,regular
+4422442596,place,neighbourhood,regular
+4422442596,source,Bing,regular
+4432119619,name,Grand Oaks Restaurant,regular
+4432119619,amenity,restaurant,regular
+4434987389,name,RN74,regular
+4434987389,amenity,restaurant,regular
+4434987389,cuisine,american,regular
+4434987389,street,Mission Street,addr
+4434987389,postcode,94105,addr
+4434987389,housenumber,301,addr
+4439934755,highway,crossing,regular
+4439934755,crossing,uncontrolled,regular
+4445006823,street,Oak Street,addr
+4445006823,housenumber,2013A,addr
+4445062406,street,Cole Street,addr
+4445062406,housenumber,449,addr
+4455946685,street,Masonic Avenue,addr
+4455946685,housenumber,1321,addr
+4459838161,lit,no,regular
+4459838161,amenity,bicycle_parking,regular
+4459838161,covered,no,regular
+4459838161,capacity,27,regular
+4459838161,bicycle_parking,wall_loops,regular
+4469367416,name,Kobeya,regular
+4469367416,amenity,restaurant,regular
+4469367416,city,San Mateo,addr
+4469367416,street,West 25th Avenue,addr
+4469367416,description,Menu,regular
+4469367416,housenumber,140,addr
+4486209191,name,Sprint,regular
+4486209191,shop,mobile_phone,regular
+4486209191,city,El Cerrito,addr
+4486209191,state,CA,addr
+4486209191,street,El Cerrito Plaza,addr
+4486209191,postcode,94530,addr
+4486209191,opening_hours,Mo-Sa 10:00-20:00; Su 11:00-19:00,regular
+4486209191,housenumber,3020,addr
+4490922389,railway,level_crossing,regular
+4504980277,railway,level_crossing,regular
+4511357329,name,Plenty,regular
+4511357329,amenity,cafe,regular
+4519930999,amenity,bench,regular
+4537292381,street,Page Street,addr
+4537292381,housenumber,1724,addr
+4538815442,street,Page Street,addr
+4538815442,housenumber,1358,addr
+4542455221,street,Webster Street,addr
+4542455221,housenumber,303,addr
+4545781432,street,Divisadero Street,addr
+4545781432,housenumber,55,addr
+4548818592,club,music,regular
+4548818592,name,Missouri Lounge,regular
+4548895017,traffic_calming,hump,regular
+4550082801,street,Golden Gate Avenue,addr
+4550082801,housenumber,1719,addr
+4556415869,street,Ellis Street,addr
+4556415869,housenumber,2062,addr
+4559569701,highway,crossing,regular
+4559569701,crossing,traffic_signals,regular
+4559990962,highway,crossing,regular
+4559990962,crossing,uncontrolled,regular
+4561583280,traffic_calming,hump,regular
+4563126172,highway,crossing,regular
+4563126172,crossing,traffic_signals,regular
+4573098076,name,Aqua Clear Plumbing,regular
+4573098076,phone,+1-510-315-8713,regular
+4573098076,website,http://311aquaclear.com,regular
+4573098076,city,Hayward,addr
+4573098076,state,CA,addr
+4573098076,street,Mission Blvd #302,addr
+4573098076,postcode,94541,addr
+4573098076,housenumber,22568,addr
+4582003349,name,Mizu Salon,regular
+4582003349,shop,beauty,regular
+4587853393,name,ristorante ideal,regular
+4587853393,amenity,restaurant,regular
+4587853393,street,Grant Avenue,addr
+4587853393,housenumber,1315,addr
+4593178693,highway,turning_circle,regular
+4593956082,highway,crossing,regular
+4593956082,crossing,uncontrolled,regular
+4595671526,highway,crossing,regular
+4595671526,crossing,traffic_signals,regular
+4595783284,traffic_calming,hump,regular
+4604442983,railway,level_crossing,regular
+4611676489,crossing,no,regular
+4613508531,FIXME,Discover what this facility is.,regular
+4616009526,amenity,restaurant,regular
+4616009526,name,Tupelo,regular
+4625128134,amenity,restaurant,regular
+4625128134,name,International Food Court,regular
+4625136766,crossing,uncontrolled,regular
+4625136766,highway,crossing,regular
+4625221575,amenity,atm,regular
+4625221575,brand,Wells Fargo,regular
+4628353541,name,Hotel Astoria,regular
+4628353541,tourism,hotel,regular
+4631054967,name,ACCO Engineered Systems,regular
+4631054967,office,company,regular
+4631865244,name,Liquor Minimart,regular
+4631865244,shop,alcohol,regular
+4662143885,leisure,picnic_table,regular
+4663194790,barrier,gate,regular
+4671607138,crossing,traffic_signals,regular
+4671607138,highway,crossing,regular
+4675302881,amenity,post_box,regular
+4675302881,operator,USPS,regular
+4702911590,housenumber,2049,addr
+4702911590,street,Divisadero Street,addr
+4709441778,amenity,bank,regular
+4709441778,atm,yes,regular
+4709441778,drive_through,no,regular
+4709441778,name,Bank of the West,regular
+4712825594,barrier,gate,regular
+4712825594,foot,yes,regular
+4719395179,railway,level_crossing,regular
+4728917952,crossing,uncontrolled,regular
+4728917952,highway,crossing,regular
+4730235236,crossing,uncontrolled,regular
+4730235236,highway,crossing,regular
+4730235636,crossing,traffic_signals,regular
+4730235636,highway,crossing,regular
+4735428567,city,San Francisco,addr
+4735428567,housenumber,120,addr
+4735428567,postcode,94111,addr
+4735428567,state,CA,addr
+4735428567,street,Green Street,addr
+4735428567,amenity,cafe,regular
+4735428567,cuisine,mexican,regular
+4735428567,name,Chica,regular
+4735428567,opening_hours,7:30am-2:30pm,regular
+4737710600,leisure,picnic_table,regular
+4739188530,housenumber,2617,addr
+4739188530,street,Divisadero Street,addr
+4740009403,entrance,yes,regular
+4740433639,highway,crossing,regular
+4746814006,crossing,uncontrolled,regular
+4746814006,highway,crossing,regular
+4755886459,city,Alameda,addr
+4755886459,housenumber,950,addr
+4755886459,postcode,94501,addr
+4755886459,state,CA,addr
+4755886459,street,West Tower Avenue,addr
+4755886459,name,Group Delphi,regular
+4755886459,office,company,regular
+4755886459,website,www.groupdelphi.com,regular
+4757430288,crossing,uncontrolled,regular
+4757430288,highway,crossing,regular
+4757825818,crossing,uncontrolled,regular
+4757825818,highway,crossing,regular
+4759500488,crossing,traffic_signals,regular
+4759500488,highway,crossing,regular
+4759501688,crossing,traffic_signals,regular
+4759501688,highway,crossing,regular
+4763953266,crossing,uncontrolled,regular
+4763953266,highway,crossing,regular
+4763953366,crossing,traffic_signals,regular
+4763953366,highway,crossing,regular
+4769165043,traffic_calming,hump,regular
+4782162711,crossing,traffic_signals,regular
+4782162711,highway,crossing,regular
+4782300210,name,3rd & Evans Ave,regular
+4782300210,operator,San Francisco Municipal Railway,regular
+4782300210,railway,tram_stop,regular
+4783987007,crossing,traffic_signals,regular
+4783987007,highway,crossing,regular
+4784127991,crossing,traffic_signals,regular
+4784127991,highway,crossing,regular
+4784488921,housenumber,54,addr
+4784488921,street,Geary Street,addr
+4784488921,name,Agent Provocateur Lingerie Boutique,regular
+4784488921,shop,clothes,regular
+4784488921,website,http://www.agentprovocateur.com/int_en,regular
+4808718397,crossing,uncontrolled,regular
+4808718397,highway,crossing,regular
+4808718497,crossing,traffic_signals,regular
+4808718497,highway,crossing,regular
+4812925494,button_operated,yes,regular
+4812925494,crossing,traffic_signals,regular
+4812925494,highway,crossing,regular
+4825090109,highway,stop,regular
+4828619474,crossing,uncontrolled,regular
+4828619474,highway,crossing,regular
+4839252826,aeroway,parking_position,regular
+4839252826,ref,A18,regular
+4849507010,amenity,fuel,regular
+4849507010,name,Shell,regular
+4865472334,housenumber,3315,addr
+4865472334,street,Divisadero Street,addr
+4880842237,housenumber,660,addr
+4880842237,street,Waller Street,addr
+4880935334,housenumber,615,addr
+4880935334,street,Waller Street,addr
+4881026626,housenumber,65,addr
+4881026626,street,Pierce Street,addr
+4893527802,amenity,restaurant,regular
+4893527802,cuisine,chinese,regular
+4893527802,name,Ping's Bistro,regular
+4911339229,highway,turning_circle,regular
