@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang = "eng-us">
+
+<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv = "X-UA-Compatible" content"IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- theme info -->
+  <meta name="description" content="This web page implements Dimple.js and D3.js for advanced visualization for flight data from 2006-2010. This work comes from the objective of finishing Udacity's Data Analyst Nanodegree program.">
+  <meta name="keywords" content="data 
+  visualization, d3, dimple,javascript, flight,delay">
+  <meta name="author" content="Raul Maldonado">
+  
+  <!-- site title -->
+  <title>2006-2010 United States Flights | Great Delay-cession</title>
+  
+  <!-- favicons -->
+  <link rel="shortcut icon" href="Images/Airplane">
+  <link rel="icon" sizes="any" mask="" href="Images/Airplane.ico">
+  <link rel="apple-touch-icon" href="Images/Airplane.ico">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+
+  <script type ="text/javascript">
+
+
+    function draw_weatherDelay(data){
+      var svg = dimple.newSvg('#chartC',400,400);
+
+      // format new 'date' variable
+      var format = d3.time.format("%m-%Y");
+
+      // loop through "data" creating Date variable
+      data.forEach(function(d){
+        d['date'] = d.month + '-' + d.year;
+        d['date'] = format.parse(d['date']);
+
+      });
+
+      var chart_ = new dimple.chart(svg,data);
+      var x = chart_.addTimeAxis("x","Date")
+      x.tickFormat="%Y/%m";
+      x.timeField = "date";
+      x.addOrderRule("date");
+
+      var y = chart_.addMeasureAxis("y","weather_delay");
+      chart_.addColorAxis("weather_delay","black")
+      chart_.addSeries(null,dimple.plot.line);
+      chart_.addSeries(null,dimple.plot.scatter);
+
+
+      chart_.draw();
+    }
+
+    function draw_onTimeArrival(data){
+      var svg = dimple.newSvg('#chartA',400,400);
+
+      // format new 'date' variable
+      var format = d3.time.format("%m-%Y");
+
+      // loop through "data" creating Date variable
+      data.forEach(function(d){
+        d['date'] = d.month + '-' + d.year;
+        d['date'] = format.parse(d['date']);
+
+      });
+
+      var chart_ = new dimple.chart(svg,data);
+      var x = chart_.addTimeAxis("x","Date")
+      x.tickFormat="%Y/%m";
+      x.timeField = "date";
+      x.addOrderRule("date");
+
+      var y = chart_.addMeasureAxis("y","arr_flights");
+      chart_.addColorAxis("arr_flights","black")
+      chart_.addSeries(null,dimple.plot.line);
+      chart_.addSeries(null,dimple.plot.scatter);
+
+
+      chart_.draw();
+    }
+  </script>
+<style>
+  circle{
+    fill: red;
+  chartC{
+    fill:black;
+  }
+</style>
+</head>
+
+
+
+
+<body style = "background: -webkit-linear-gradient(grey, #ffffff);">
+<!--body style = "background-color:#F5F5F5;"-->
+
+
+  <div id = "Intro">
+    <h1 style="font-family:georgia;" > 
+      <center><u>Great Delay-cession</u></center>
+    
+      <center><a target="_blank" style = "font-size:18px; color:black;" href="https://www.linkedin.com/in/raulm8/">by Raul Maldonado</a></center>
+    </h1>
+
+
+
+    <center>
+      <img src="../Images/flight.jpg" alt="Mountain View" style="width:454px;height:228px;
+      border-radius:80px; 
+      border-radius: 20%;">
+    </center>
+
+      <h2>Introduction</h2>
+      
+      <p>
+      Fustrated from waiting the in the terminal quite often?
+
+        <a target="_blank" style = "font-size:18px; color:black;" 
+        href = "http://www.fly.faa.gov/flyfaa/usmap.jsp">Flight Delays.</a> Flight delay are a fustrating factor in travel experience. Moreover, an airline's reputation can be discredited from inconsistencies in airline techincal delays. 
+      </p>
+      
+      <p>
+      We observe the potential cause of flight delays using 
+        <a target="_blank" style = "font-size:18px; color:black;"
+        href = "https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp">The U.S. Department of Transportation's (DOT) Bureau of Transportation Statistics (BTS)</a> 2006-2010 recorded information on flight performance.
+      </p>
+      
+      <p>
+      Enjoy!
+      </p>
+  </div>
+
+  <div id = "EDA">
+    <h2>Exploration</h2>
+      <p>Testing paragraph12345<p>
+    <div id = "chartA">
+    <h3>On Time Flights over Time</h3>
+
+          <script type = "text/javascript">
+          d3.csv("Data/PreparedData/flight_data_OLD.csv",draw_onTimeArrival);
+          </script>
+    </h3>
+    <div id = "chartC">
+          <h3>Delayed Flights over Time</h3>
+
+      
+          <script type = "text/javascript">
+          d3.csv("Data/PreparedData/flight_data_OLD.csv",draw_weatherDelay);
+          </script>
+          
+          <h3>Cancelled Flights over Time</h3>
+
+        <h2>Takeaways</h2>
+    </div>
+</div>
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang = "eng-us">
+
+<head >
+	<meta charset = "utf-8">
+	<meta http-equiv = "X-UA-Compatible" content"IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- theme info -->
+  <meta name="description" content="This web page implements Dimple.js and D3.js for advanced visualization for flight data from 2006-2010. This work comes from the objective of finishing Udacity's Data Analyst Nanodegree program.">
+  <meta name="keywords" content="data 
+  visualization, d3, dimple,javascript, flight,delay">
+  <meta name="author" content="Raul Maldonado">
+  
+  <!-- site title -->
+  <title>Great Delay-cession?</title>
+  
+  <!-- favicons -->
+  <link rel="shortcut icon" href="Images/Airplane">
+  <link rel="icon" sizes="any" mask="" href="Images/Airplane.ico">
+  <link rel="apple-touch-icon" href="Images/Airplane.ico">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js">
+  </script>
+
+<script src = "js/code-4.js"></script>
+
+
+<link rel="stylesheet" href="CSS/style-format.css">
+
+</head>
+
+
+
+
+
+<body>
+
+  
+  <div id = "Intro">
+    
+    <h1 style="font-family:georgia;" > 
+      
+      <center>
+        <u>The Great Delay?</u>
+      </center>
+    
+      <center>
+        <a target="_blank" style = "font-size:12px; color:black;" href="https://www.linkedin.com/in/raulm8/">by Raul Maldonado</a>
+      </center>
+
+    </h1>
+
+
+    <!--Header Image-->
+    <center>
+      <img src="../Images/flight.jpg" alt="Up, up, and away!" style="width:454px;height:228px;
+      border-radius:80px; 
+      border-radius: 20%;">
+    </center>
+
+    <!--Introductory Passage-->
+    <h2>
+      <u>Introduction</u>
+    </h2>
+    
+    <p>
+      
+      Frustrated from waiting the in the terminal quite often?
+      Ohhhh yes...<a target="_blank" style = "font-size:15px; color:black;" 
+        href = "http://www.fly.faa.gov/flyfaa/usmap.jsp">a flight delay.</a>
+    
+    </p>
+
+
+    <p>
+      
+      Flight delays are a common annoyance for travelers. In a <a target = "_blank" style = "font-size:15px; color:black;" href="http://www.iata.org/publications/store/Documents/GPS-2016-Highlights-Final.pdf">2016 IATA survey </a>, passengers become increasingly dissatisfied from entering the security, on-boarding the plane, being on the plane, and arriving to their destination. I.e. 20% of passengers have a poor experience with the flight experience.
+
+    </p>
+
+    <p>
+      Factoring in delays, the satisfactory rate in flight experience should surely increase! Delays, or even inconsistencies in airline techincal delays, could in turn affect an airline's reputation.
+    </p>
+      
+    <p>
+
+      The following are common delays travelers may have encountered:
+      <ol>
+
+        <li><b>Air Carrier:</b> The cause of the cancellation or delay was due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.).
+        </li>
+
+        <li><b>Extreme Weather:</b> Significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane.
+        </li>
+
+        <li><b>National Aviation System (NAS):</b> Delays and cancellations attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control.
+        </li>
+
+        <li><b>Late-arriving aircraft:</b> A previous flight with same aircraft arrived late, causing the present flight to depart late.
+        </li>
+
+
+        <li><b>Security:</b> Delays or cancellations caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.
+        </li>
+      </ol>
+    </p>
+      
+    <p>
+      We observe the potential cause of flight delays using 
+      <a target="_blank" style = "font-size:15px; color:black;"
+      href = "https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp">The U.S. Department of Transportation's (DOT) Bureau of Transportation Statistics (BTS)</a> 2006-2010 recorded information on flight performance.
+    </p>
+      
+    <p>
+      Enjoy!
+    </p>
+  </div>
+
+  <!--Body: Analysis Through Visualization-->
+  <div id = "EDA">
+    
+    <h2>
+      <u>Exploration</u>
+    </h2>
+    
+    <p>We observe the following several flight delay-related scenarios for our 2006-2010 flight data:
+      <ol>  
+        <li>
+          <b>On-time Flights</b>
+        </li>
+        
+        <li>
+          <b>Weather Delayed Flights</b>
+        </li>
+        
+        <li>
+          <b>Security Delayed Flights</b>
+        </li>
+        
+        <li>
+          <b>Aircraft Delayed Flights</b>
+        </li>
+        
+        <li>
+          <b>Carrier Delayed Flights</b>
+        </li>
+        
+        <li>
+          <b>Cancelled Flights</b>
+        </li>
+      </ol>
+    </p>
+    
+
+    <!--Visualization Framework-->
+    <div id = "FlightStatus">
+
+      <h3>General Flight Status Over Time</h3>
+      
+      <p>
+        The following is a general scope of flight status, in percentage.
+      </p>
+
+      <p>
+        You have the option of looking at flight status percentage from a timespan of 2006-2010 or between January to December.
+      </p>
+      
+      <!--General Flight Visualization-->
+      <div id = "chart_general_flights">
+
+        <h4 id = "h4">
+          <center>Flight Status Proportion (%) Versus Years</center>
+        </h4>
+        
+        <!--Button Options for Selecting Two types of Visualizations-->
+        <button  class = "button" id ="btnG" type = "button">Yearly TimeFrame</button>
+        <button  class = "button" id = "btnZ" type = "button">Monthly TimeFrame</button>
+        
+        <!--Implementation of data visualization with dynamic action-->
+        <script type = "text/javascript">
+          
+          d3.csv("Data/PreparedData/flight_data_byYear.csv",draw_flightStatusYears);
+
+          document.getElementById("btnG").addEventListener('click', function(){
+            document.getElementById("h4").innerHTML = 
+            "<center>Flight Status Proportion (%) Versus Years</center>";
+            
+              var svg = d3.select("#chart_general_flights")
+              .select("svg").remove();
+
+            d3.csv("Data/PreparedData/flight_data_byYear.csv",
+              draw_flightStatusYears);
+            
+            });
+
+          document.getElementById("btnZ").addEventListener('click', function(){
+            document.getElementById("h4").innerHTML =
+            "<center>Flight Status Proportion (%) Versus Months</center>";
+            
+              var svg = d3.select("#chart_general_flights").
+              select("svg").remove();
+
+            d3.csv("Data/PreparedData/flight_data_byMonth.csv",
+              draw_flightStatusMonths);
+
+            });
+
+        </script>
+        
+      </div>
+
+    </div>
+    
+    <div class="Chart" id = "chart_delayedFlights">
+      
+      <h3>Delayed Flights over Time</h3>
+ 
+      <p>
+        The following is a zoom-in of the proportion of flight delays, in percentage.
+      </p>
+
+      <p>
+        You have the option of looking at flight status percentage from a timespan of 2006-2010 or between January to December.
+      </p>
+      
+
+      <div id = "chart_flight_delay">
+        <h4 id = "h4-2">
+          <center>Flight Delays Proportion (%) Versus Years</center>
+        </h4>
+        
+        <!--Button Selection for Visualization Choice-->
+        <button class = "button" id ="btnY" type = "button">Yearly TimeFrame</button>
+        <button  class = "button" id = "btnM" type = "button">Monthly TimeFrame</button>
+
+        <script type = "text/javascript">
+        d3.csv("Data/PreparedData/flight_data_byYear.csv",draw_FlightDelayYears);
+
+        <!--Click action on "btnY" does...-->
+        document.getElementById("btnY").addEventListener('click', function(){
+          
+          document.getElementById("h4-2").innerHTML =
+            "<center>Flight Delays Proportion (%) Versus Years</center>";
+          
+            <!--For all SVG elements "chart_delayedFlights", remove them-->
+            var svg = d3.select("#chart_delayedFlights").
+            select("svg").remove();
+
+          d3.csv("Data/PreparedData/flight_data_byYear.csv",
+            draw_FlightDelayYears);
+
+          });
+
+        <!--Click action on "btnM" does...-->
+        document.getElementById("btnM").addEventListener('click', function(){
+          
+          
+          document.getElementById("h4-2").innerHTML =
+            "<center>Flight Delays Proportion (%) Versus Months</center>";
+            
+          <!--For all SVG elements "chart_delayedFlights", remove them-->
+            var svg = d3.select("#chart_delayedFlights").
+            select("svg").remove();
+          
+          <!--Implement draw function-->
+          d3.csv("Data/PreparedData/flight_data_byMonth.csv",
+            draw_FlightDelayMonths);
+
+          });
+        
+        </script>
+      
+      </div>
+    
+    </div>
+
+  </div>
+
+  <!--Conclusion/Summary-->
+  <div id = "Conclusion">
+    <h2>
+      <u>Summary and Takeaways</u>
+    </h2>
+
+
+    <h3>
+      Flight Status
+    </h3>
+    
+    <p>
+      We observe that flights tend to be on time 70% of the time. Following that,
+      flights are delayed 30% of the time.
+    </p>
+    
+    <h3>
+      Monthly
+    </h3>
+    
+    <p>
+      Flights tend to become more delayed in months 5-7 and 11-12. I.e., flights are more delayed in the summer or winter. In hindsight, this can be assumed because summer and winter are traveling seasons.
+
+    </p>
+    
+    <p>
+      If we observe the "Delayed Flights over Time" section, we see the main reasons for flight delays are from NAS, aircraft, or carrier concerns, 5% of the time for each category.
+    </p>
+    
+    <h3>
+      Yearly
+    </h3>
+    
+    <p>
+      We observe flights are roughly on-time 70% of the time. However, there was an occurence of significant flight delays from 2006-2007, as seen in the yearly timeframe of "General Flight Status Over Time." 
+    </p>
+
+    <p>
+      A explanation for this occurence could be from the 2001 security regulations. These rules were implemented after America's 9/11 unfortunate terrorist attack. 
+
+      The effects of these increased security measures are indicative from <a target="_blank" style = "font-size:15px; color:black;"
+          href = "http://www.cnn.com/2007/US/09/25/flight.delays/index.html?_s=PM:US">CNN's report on Flight Delays, in 2007.</a>
+      One excerpt mentioned:
+      
+      <p id = "summaryText">
+        "Congress considered enacting a passengers' bill of rights after incidents in January 1999 in which passengers remained aboard planes for more than eight hours on snowbound Detroit runways.
+      </p>
+      
+      <p id = "summaryText">
+      But, "based on the first seven months of the year, it is clear that 2007 may be the busiest travel period since the peak of 2000 and may surpass the 2000 record levels for flight delays, cancellations and diversions," the report said.
+      </p>
+      
+      <p id = "summaryText">
+      Data through July show that nearly 28 percent of commercial passenger flights were delayed, canceled or diverted, compared with 24 percent during the same period in 2006. And the delays were longer -- nearly 57 minutes on average, up nearly three minutes from 2006.
+      </p>
+      
+      <p id = "summaryText">
+      In the American Airlines and JetBlue incidents, "while weather was the primary contributor ... it was not the only factor in passengers being stranded on board aircraft for long periods of time," the report said.
+      </p>
+      
+      <p id = "summaryText">
+      "We found that neither airline had a system-wide policy or procedure in place to mitigate long, on-board delays and off-load passengers within a certain period of time."
+      </p>
+      
+      <p id = "summaryText">
+      American did not control the number of flights diverted to other airports, in turn overwhelming its operations in Austin, Texas, where some of the longest on-board delays took place, the report said."
+      </p>
+    </p>
+
+  </div>
+
+  <!--Footer Notes-->
+  <div class="footer">
+    
+    <div id="footer">
+      
+      <h2 class="footer-header">
+        <u>Resources</u>
+      </h2>
+
+      <a target = "_blank" href="https://github.com/CloudChaoszero/P6-AdvancedVisualization-FlightData">
+        Repository
+      </a>
+
+      <p>Social Media</p>
+    
+      <nav class="social">
+        <ul class="social_links">
+          
+            <li><a target="_blank" href="https://twitter.com/Cloud_Chaoszero">
+              <img style = "width:40px; height: 40px;" src="Images/InHTMLIcon/twitter.png" alt="Twitter">
+            </a></li>
+          
+            <li><a target="_blank" href="https://www.linkedin.com/in/raulm8/">
+              <img style = "width:40px; height: 40px;" src="Images/InHTMLIcon/linkedin.jpg" alt="LinkedIn">
+            </a></li>
+          
+            <li><a target="_blank" href="https://github.com/CloudChaoszero">
+              <img style = "width:40px; height: 40px;" src="Images/InHTMLIcon/github.png" alt="LinededIn">
+            </a></li>
+          
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+
+  </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,34 @@
+circle{
+  fill: red;
+}
+
+
+.tick line{
+
+
+	visibility: hidden;
+}
+body{
+background: -webkit-linear-gradient(grey, #ffffff); 
+
+}
+
+h2{
+font-family:"georgia";
+}
+
+svg{
+	display: block;
+	width:100%;	
+	margin: 10 auto;
+}
+
+
+
+button{
+  border-radius: 50%;
+}
+
+#summaryText{
+	 color: purple;
+}
